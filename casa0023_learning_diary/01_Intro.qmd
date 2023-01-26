@@ -1,4 +1,4 @@
-# An Introduction to Remote Sensing
+# Week 1 - An Introduction to Remote Sensing
 
 This is a book created from markdown and executable code.
 
