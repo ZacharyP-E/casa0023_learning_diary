@@ -26,5 +26,19 @@
     "title": "References",
     "section": "",
     "text": "Knuth, Donald E. 1984. “Literate Programming.” Comput.\nJ. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "01_Intro.html",
+    "href": "01_Intro.html",
+    "title": "1  An Introduction to Remote Sensing",
+    "section": "",
+    "text": "See Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97."
+  },
+  {
+    "objectID": "02_Presentation.html",
+    "href": "02_Presentation.html",
+    "title": "2  Presentation",
+    "section": "",
+    "text": "[Link]"
   }
 ]

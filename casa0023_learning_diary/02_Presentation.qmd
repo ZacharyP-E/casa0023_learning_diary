@@ -1,0 +1,5 @@
+# Presentation
+
+Week 2 focused on the use of code to present and host websites and slides, allowing for a portfolio to be formed.
+
+[\[Link\]](https://zacharyp-e.github.io/casa0023_pres/presentation.html#1)

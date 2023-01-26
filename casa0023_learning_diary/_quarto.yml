@@ -3,12 +3,12 @@ project:
 
 book:
   title: "casa0023_learning_diary"
-  author: "Jane Doe"
+  author: "Zachary Pescod-Everiss"
   date: "1/26/2023"
   chapters:
     - index.qmd
-    - intro.qmd
-    - summary.qmd
+    - 01_Intro.qmd
+    - 02_Presentation.qmd
     - references.qmd
 
 bibliography: references.bib
