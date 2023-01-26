@@ -1,0 +1,33 @@
+# An Introduction to Remote Sensing
+
+Welcome
+
+## Summary
+
+This weeks lecture looked at an overview of remote sensing for earth observation and its several of its applications.
+
+## Applications
+
+The ability of satellites to revisit the same point on earth every 16 days, allows for an extensive list of applications.
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = LR]
+
+a [label = 'Remote Sensing', shape = square, fillcolor = Black]
+b [label = 'Climate Research']
+c [label = 'Natural Hazard Managment']
+d [label = 'Urban planning']
+e [label = 'Weather Forcasting']
+f [label = 'Ocenography']
+g [label = 'Intelligence Gathering']
+
+
+a -> {b c d e f g}
+}")
+
+```
+[@szpakowskiReviewApplicationsRemote2019]
+
+## Reflection
