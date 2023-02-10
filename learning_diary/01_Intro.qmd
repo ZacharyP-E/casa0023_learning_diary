@@ -10,9 +10,9 @@ This has become an important tool for environmental research due to the large am
 
 ### How do they work?
 
-Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy initially originates from the sun, the sensor itself, or even man-made lights.
+Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy originates from the sun, the sensor itself, or even man-made lights.
 
-The sensor records the level of radiation received, and processes it into an image.
+The workflow of the sensor can be seen below:
 
 ```{r echo=FALSE}
 DiagrammeR::grViz("digraph {
@@ -52,7 +52,17 @@ Image Source: @lopezornelas2016
 |                   | -   The emitted radiation can impact upon wildlife.                        | -   Suffers from shadow effects from vegetation (E.g. trees), soil and buildings. |
 +-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
 
-### Resoloution
+### Electromagnetic (EM) waves
+
+The EM energy measured by the sensor is not equal to that which is emitted by the source. This is due interferences such as energy absorption on a surface, or scattering from particles within the atmosphere.
+
+The different wavelength of the EM radiation interacts with surfaces in different ways, making some ideal for remotely sensing planetary surfaces (not limited to Earth observation).
+
+![Figure 2: Strength of reflection from surfaces](https://www.researchgate.net/publication/318175303/figure/fig1/AS:513582069751808@1499458915697/Strength-of-reflection-and-radiation-of-electromagnetic-waves-from-plants-earth-and.png)
+
+Image Source: @young2017
+
+### Resolution
 
 The level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).
 
@@ -80,7 +90,7 @@ b [label = 'Climate Research']
 c [label = 'Natural Hazard Managment']
 d [label = 'Urban planning']
 e [label = 'Weather Forcasting']
-f [label = 'Ocenography']
+f [label = 'Oceanography']
 g [label = 'Intelligence Gathering']
 
 
@@ -91,4 +101,26 @@ a -> {b c d e f g}
 
 [@szpakowskiReviewApplicationsRemote2019]
 
+Many academic studies use remotely sensed data to quantify changes temporally.
+
+SAR data can be used to identify water surface anomalies, allowing the identification of flooding or drought over large spatial extents. @lopez2020 used data to calculate the surface water areal fraction (SWAF) of the Amazon river basin to quantify changes in water content after the drought in 2010.
+
+![Figure 3: Changes in SWAF in the Amazon basin during a drought event in 2010.](figures/10712_2020_9618_Fig7_HTML.png.webp)
+
+CASA's own Ollie Ballinger is at the forefront of remote sensing application innovation. Specifically within the intelligence gathering stream.
+
+2.  Radar Interference Tracker [@ballinger2022]
+
+Accidentally maximizing (instead of minimising) the background noise of the Sentinel-1 SAR (Synthetic Aperture Radar) imagery revealed interference caused by active missile defense systems spread across the middle east. Allowing those with the technical skills to manipulate remotely sensed data to identify locations of the armed forces activity. This phenomena has been found to occur due to the overlap of wavelength frequencies between military radar systems and that used by SAR satellites.
+
+![Figure 4: Converging lines of interference over an Airbase in Bahrain.](https://miro.medium.com/v2/resize:fit:720/format:webp/1*8jVUwoNCHqB_Z1m5FT7RhA.png)
+
+Image Source: @dan2020
+
+3.  Open Source Damage Detection in Ukraine
+
+Topography data (likely from SAR satellite sensor) was used by Ollie to identify variation before and after an event, allowing the quantification of building height change. This can be overlaid with OSM (Open Street Map) data to allow the prediction of quantity of residents displaced by the distraction during conflict, in addition to starting to identify where resources should be allocated best to rebuild Ukraine's infrastructure.
+
 ## Reflection
+
+The use of passive remotely sensed data appears to have significant flaw of being obstructed by poor weather conditions with cloud cover, in addition to the limited spatial resolution. Both of these factors would mean that the analysis of small scale temporal and spatial change could prove inaccurate or unfeasible. However, if the limitations are considered before conducting scientific research the methodology can provde valuable insights for academics, policy makers and the wider group of stakeholders.

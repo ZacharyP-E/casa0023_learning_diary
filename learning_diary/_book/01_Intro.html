@@ -184,7 +184,8 @@ div.csl-indent {
   <ul class="collapse">
   <li><a href="#how-do-they-work" id="toc-how-do-they-work" class="nav-link" data-scroll-target="#how-do-they-work"><span class="toc-section-number">1.1.1</span>  How do they work?</a></li>
   <li><a href="#broad-classifications" id="toc-broad-classifications" class="nav-link" data-scroll-target="#broad-classifications"><span class="toc-section-number">1.1.2</span>  Broad Classifications</a></li>
-  <li><a href="#resoloution" id="toc-resoloution" class="nav-link" data-scroll-target="#resoloution"><span class="toc-section-number">1.1.3</span>  Resoloution</a></li>
+  <li><a href="#electromagnetic-em-waves" id="toc-electromagnetic-em-waves" class="nav-link" data-scroll-target="#electromagnetic-em-waves"><span class="toc-section-number">1.1.3</span>  Electromagnetic (EM) waves</a></li>
+  <li><a href="#resolution" id="toc-resolution" class="nav-link" data-scroll-target="#resolution"><span class="toc-section-number">1.1.4</span>  Resolution</a></li>
   </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="toc-section-number">1.2</span>  Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">1.3</span>  Reflection</a></li>
@@ -217,12 +218,12 @@ div.csl-indent {
 <p>This has become an important tool for environmental research due to the large amounts of data becoming available, with relatively high temporal resolution.</p>
 <section id="how-do-they-work" class="level3" data-number="1.1.1">
 <h3 data-number="1.1.1" class="anchored" data-anchor-id="how-do-they-work"><span class="header-section-number">1.1.1</span> How do they work?</h3>
-<p>Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy initially originates from the sun, the sensor itself, or even man-made lights.</p>
-<p>The sensor records the level of radiation received, and processes it into an image.</p>
+<p>Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy originates from the sun, the sensor itself, or even man-made lights.</p>
+<p>The workflow of the sensor can be seen below:</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-1b056dd117581c24de1c" style="width:100%;height:464px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-1b056dd117581c24de1c">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB]\n\na [label = \"Measure electromagnetic radiation \nemitted or reflect from study area \"]\nb [label = \"Convert measurements to digital data.\"]\nc [label = \"Process data into image\"]\n\n\n\na -> b -> c\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-4173f01ff4eba970b674" style="width:100%;height:464px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-4173f01ff4eba970b674">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB]\n\na [label = \"Measure electromagnetic radiation \nemitted or reflect from study area \"]\nb [label = \"Convert measurements to digital data.\"]\nc [label = \"Process data into image\"]\n\n\n\na -> b -> c\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </section>
@@ -280,8 +281,20 @@ div.csl-indent {
 </tbody>
 </table>
 </section>
-<section id="resoloution" class="level3" data-number="1.1.3">
-<h3 data-number="1.1.3" class="anchored" data-anchor-id="resoloution"><span class="header-section-number">1.1.3</span> Resoloution</h3>
+<section id="electromagnetic-em-waves" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="electromagnetic-em-waves"><span class="header-section-number">1.1.3</span> Electromagnetic (EM) waves</h3>
+<p>The EM energy measured by the sensor is not equal to that which is emitted by the source. This is due interferences such as energy absorption on a surface, or scattering from particles within the atmosphere.</p>
+<p>The different wavelength of the EM radiation interacts with surfaces in different ways, making some ideal for remotely sensing planetary surfaces (not limited to Earth observation).</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.researchgate.net/publication/318175303/figure/fig1/AS:513582069751808@1499458915697/Strength-of-reflection-and-radiation-of-electromagnetic-waves-from-plants-earth-and.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 2: Strength of reflection from surfaces</figcaption><p></p>
+</figure>
+</div>
+<p>Image Source: <span class="citation" data-cites="young2017">Young and Onoda (<a href="references.html#ref-young2017" role="doc-biblioref">2017</a>)</span></p>
+</section>
+<section id="resolution" class="level3" data-number="1.1.4">
+<h3 data-number="1.1.4" class="anchored" data-anchor-id="resolution"><span class="header-section-number">1.1.4</span> Resolution</h3>
 <p>The level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).</p>
 <table class="table">
 <colgroup>
@@ -331,17 +344,48 @@ div.csl-indent {
 <p>The ability of satellites to revisit the same point on earth every 16 days, allows for an extensive list of applications.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-34dfe96fa0d224f0ceeb" style="width:100%;height:464px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-34dfe96fa0d224f0ceeb">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Remote Sensing\", shape = square, fillcolor = Black]\nb [label = \"Climate Research\"]\nc [label = \"Natural Hazard Managment\"]\nd [label = \"Urban planning\"]\ne [label = \"Weather Forcasting\"]\nf [label = \"Ocenography\"]\ng [label = \"Intelligence Gathering\"]\n\n\na -> {b c d e f g}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-245f44fe86ccc9ae9cbc" style="width:100%;height:464px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-245f44fe86ccc9ae9cbc">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Remote Sensing\", shape = square, fillcolor = Black]\nb [label = \"Climate Research\"]\nc [label = \"Natural Hazard Managment\"]\nd [label = \"Urban planning\"]\ne [label = \"Weather Forcasting\"]\nf [label = \"Oceanography\"]\ng [label = \"Intelligence Gathering\"]\n\n\na -> {b c d e f g}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><span class="citation" data-cites="szpakowskiReviewApplicationsRemote2019">(<a href="references.html#ref-szpakowskiReviewApplicationsRemote2019" role="doc-biblioref">Szpakowski and Jensen 2019</a>)</span></p>
+<p>Many academic studies use remotely sensed data to quantify changes temporally.</p>
+<p>SAR data can be used to identify water surface anomalies, allowing the identification of flooding or drought over large spatial extents. <span class="citation" data-cites="lopez2020">Lopez et al. (<a href="references.html#ref-lopez2020" role="doc-biblioref">2020</a>)</span> used data to calculate the surface water areal fraction (SWAF) of the Amazon river basin to quantify changes in water content after the drought in 2010.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="figures/10712_2020_9618_Fig7_HTML.png.webp" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 3: Changes in SWAF in the Amazon basin during a drought event in 2010.</figcaption><p></p>
+</figure>
+</div>
+<p>CASA’s own Ollie Ballinger is at the forefront of remote sensing application innovation. Specifically within the intelligence gathering stream.</p>
+<ol start="2" type="1">
+<li>Radar Interference Tracker <span class="citation" data-cites="ballinger2022">(<a href="references.html#ref-ballinger2022" role="doc-biblioref">Ballinger 2022</a>)</span></li>
+</ol>
+<p>Accidentally maximizing (instead of minimising) the background noise of the Sentinel-1 SAR (Synthetic Aperture Radar) imagery revealed interference caused by active missile defense systems spread across the middle east. Allowing those with the technical skills to manipulate remotely sensed data to identify locations of the armed forces activity. This phenomena has been found to occur due to the overlap of wavelength frequencies between military radar systems and that used by SAR satellites.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*8jVUwoNCHqB_Z1m5FT7RhA.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 4: Converging lines of interference over an Airbase in Bahrain.</figcaption><p></p>
+</figure>
+</div>
+<p>Image Source: <span class="citation" data-cites="dan2020">Dan (<a href="references.html#ref-dan2020" role="doc-biblioref">2020</a>)</span></p>
+<ol start="3" type="1">
+<li>Open Source Damage Detection in Ukraine</li>
+</ol>
+<p>Topography data (likely from SAR satellite sensor) was used by Ollie to identify variation before and after an event, allowing the quantification of building height change. This can be overlaid with OSM (Open Street Map) data to allow the prediction of quantity of residents displaced by the distraction during conflict, in addition to starting to identify where resources should be allocated best to rebuild Ukraine’s infrastructure.</p>
 </section>
 <section id="reflection" class="level2" data-number="1.3">
 <h2 data-number="1.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">1.3</span> Reflection</h2>
+<p>The use of passive remotely sensed data appears to have significant flaw of being obstructed by poor weather conditions with cloud cover, in addition to the limited spatial resolution. Both of these factors would mean that the analysis of small scale temporal and spatial change could prove inaccurate or unfeasible. However, if the limitations are considered before conducting scientific research the methodology can provde valuable insights for academics, policy makers and the wider group of stakeholders.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-ballinger2022" class="csl-entry" role="doc-biblioentry">
+Ballinger, Ollie. 2022. <span>“Radar Interference Tracker: A New Open Source Tool to Locate Active Military Radar Systems.”</span> <a href="https://www.bellingcat.com/resources/2022/02/11/radar-interference-tracker-a-new-open-source-tool-to-locate-active-military-radar-systems/">https://www.bellingcat.com/resources/2022/02/11/radar-interference-tracker-a-new-open-source-tool-to-locate-active-military-radar-systems/</a>.
+</div>
+<div id="ref-dan2020" class="csl-entry" role="doc-biblioentry">
+Dan, Harel. 2020. <span>“X Marks The Spot: Identifying MIM-104 Patriot Batteries From Sentinel-1 SAR Multi-Temporal Imagery.”</span> <a href="https://medium.com/@HarelDan/x-marks-the-spot-579cdb1f534b">https://medium.com/@HarelDan/x-marks-the-spot-579cdb1f534b</a>.
+</div>
 <div id="ref-dong2017" class="csl-entry" role="doc-biblioentry">
 Dong, Pinliang, and Qi Chen. 2017. <em>LiDAR Remote Sensing and Applications</em>. Boca Raton: CRC Press. <a href="https://doi.org/10.4324/9781351233354">https://doi.org/10.4324/9781351233354</a>.
 </div>
@@ -351,11 +395,17 @@ Li, Jun, Yanqiu Pei, Shaohua Zhao, Rulin Xiao, Xiao Sang, and Chengye Zhang. 202
 <div id="ref-lopezornelas2016" class="csl-entry" role="doc-biblioentry">
 Lopez Ornelas, Fernanda. 2016. <span>“The Mexican Water Forest: Benefits of Using Remote Sensing Techniques to Assess Changes in Land Use and Land Cover.”</span> PhD thesis. <a href="https://doi.org/10.13140/RG.2.2.11855.43685">https://doi.org/10.13140/RG.2.2.11855.43685</a>.
 </div>
+<div id="ref-lopez2020" class="csl-entry" role="doc-biblioentry">
+Lopez, T., A. Al Bitar, S. Biancamaria, A. Güntner, and A. Jäggi. 2020. <span>“On the Use of Satellite Remote Sensing to Detect Floods and Droughts at Large Scales.”</span> <em>Surveys in Geophysics</em> 41 (6): 1461–87. <a href="https://doi.org/10.1007/s10712-020-09618-0">https://doi.org/10.1007/s10712-020-09618-0</a>.
+</div>
 <div id="ref-szpakowskiReviewApplicationsRemote2019" class="csl-entry" role="doc-biblioentry">
 Szpakowski, David M., and Jennifer L. R. Jensen. 2019. <span>“A <span>Review</span> of the <span>Applications</span> of <span>Remote</span> <span>Sensing</span> in <span>Fire</span> <span>Ecology</span>.”</span> <em>Remote Sensing</em> 11 (22): 2638. <a href="https://doi.org/10.3390/rs11222638">https://doi.org/10.3390/rs11222638</a>.
 </div>
 <div id="ref-watts2012" class="csl-entry" role="doc-biblioentry">
 Watts, Adam C., Vincent G. Ambrosia, and Everett A. Hinkley. 2012. <span>“Unmanned Aircraft Systems in Remote Sensing and Scientific Research: Classification and Considerations of Use.”</span> <em>Remote Sensing</em> 4 (6): 1671–92. <a href="https://doi.org/10.3390/rs4061671">https://doi.org/10.3390/rs4061671</a>.
+</div>
+<div id="ref-young2017" class="csl-entry" role="doc-biblioentry">
+Young, Oran, and Masami Onoda. 2017. <span>“Satellite Earth Observations in Environmental Problem-Solving.”</span> In, 3–27.
 </div>
 </div>
 </section>
