@@ -1,0 +1,93 @@
+[
+  {
+    "objectID": "01_Intro.html",
+    "href": "01_Intro.html",
+    "title": "1  An Introduction to Remote Sensing",
+    "section": "",
+    "text": "Welcome"
+  },
+  {
+    "objectID": "01_Intro.html#summary",
+    "href": "01_Intro.html#summary",
+    "title": "1  An Introduction to Remote Sensing",
+    "section": "1.1 Summary",
+    "text": "1.1 Summary\nRemote sensing refers to techniques used to gather data for an object or area of interest without directly measuring it. This often makes use of sensors aboard satellites or aircraft (Li et al. 2020; Watts, Ambrosia, and Hinkley 2012), but can also employ handheld measurements such as LIDAR (Dong and Chen 2017).\nThis has become an important tool for environmental research due to the large amounts of data becoming available, with relatively high temporal resolution.\n\n1.1.1 How do they work?\nRemote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy initially originates from the sun, the sensor itself, or even man-made lights.\nThe sensor records the level of radiation received, and processes it into an image.\n\n\n\n\n\n\n\n\n1.1.2 Broad Classifications\nSensors can be broken down into two broad classes, being passive and active.\n\n\n\nFigure 1: Broad classifications of remote sensors.\n\n\nImage Source: Lopez Ornelas (2016)\n\n\n\n\n\n\n\n\n\nActive\nPassive\n\n\n\n\nEnergy Source\nEmits electromagnetic waves from sensor.\nUses reflected energy from the sun\n\n\nBenefit\n\nCan penetrate through clouds, and vegetation.\nControl of sensor leads to highly accurate data.\n\n\nCheaper and requiring less specialised hardware compared to Active sensors.\nWider range of wavelengths providing a more comprehensive view.\n\n\n\nLimitation\n\nMore expensive than passive sensors due to the required energy source.\nThe emitted radiation can impact upon wildlife.\n\n\nLess effective during poor weather conditions.\nSuffers from shadow effects from vegetation (E.g. trees), soil and buildings.\n\n\n\n\n\n\n1.1.3 Resoloution\nThe level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).\n\n\n\n\n\n\n\n\n\n\n\nSpatial\nTemporal\nSpectral\nRadiometric\n\n\n\n\nDescription\nThe unit area that a single pixel spans.\nThe time between usable successive images (revisit time).\nThe number of electromagnetic wave bands in an image.\nThe number of bits representing the digitised waves. |\n\n\nImportance\nProviding more detailed data on study area.\nAbility to identify change through time.\nAllows more detailed information on properties of the study area.\nIdentifying finer variations in reflected energy.\n\n\nUnits\nFeet or meters squared.\nDays\nWavelength or band\nBits"
+  },
+  {
+    "objectID": "01_Intro.html#applications",
+    "href": "01_Intro.html#applications",
+    "title": "1  An Introduction to Remote Sensing",
+    "section": "1.2 Applications",
+    "text": "1.2 Applications\nThe ability of satellites to revisit the same point on earth every 16 days, allows for an extensive list of applications.\n\n\n\n\n\n\n(Szpakowski and Jensen 2019)"
+  },
+  {
+    "objectID": "01_Intro.html#reflection",
+    "href": "01_Intro.html#reflection",
+    "title": "1  An Introduction to Remote Sensing",
+    "section": "1.3 Reflection",
+    "text": "1.3 Reflection\n\n\n\n\nDong, Pinliang, and Qi Chen. 2017. LiDAR Remote Sensing and Applications. Boca Raton: CRC Press. https://doi.org/10.4324/9781351233354.\n\n\nLi, Jun, Yanqiu Pei, Shaohua Zhao, Rulin Xiao, Xiao Sang, and Chengye Zhang. 2020. “A Review of Remote Sensing for Environmental Monitoring in China.” Remote Sensing 12 (7): 1130. https://doi.org/10.3390/rs12071130.\n\n\nLopez Ornelas, Fernanda. 2016. “The Mexican Water Forest: Benefits of Using Remote Sensing Techniques to Assess Changes in Land Use and Land Cover.” PhD thesis. https://doi.org/10.13140/RG.2.2.11855.43685.\n\n\nSzpakowski, David M., and Jennifer L. R. Jensen. 2019. “A Review of the Applications of Remote Sensing in Fire Ecology.” Remote Sensing 11 (22): 2638. https://doi.org/10.3390/rs11222638.\n\n\nWatts, Adam C., Vincent G. Ambrosia, and Everett A. Hinkley. 2012. “Unmanned Aircraft Systems in Remote Sensing and Scientific Research: Classification and Considerations of Use.” Remote Sensing 4 (6): 1671–92. https://doi.org/10.3390/rs4061671."
+  },
+  {
+    "objectID": "02_Presentation.html",
+    "href": "02_Presentation.html",
+    "title": "2  Presentation",
+    "section": "",
+    "text": "[Link]"
+  },
+  {
+    "objectID": "03_Corrections.html",
+    "href": "03_Corrections.html",
+    "title": "3  Corrections",
+    "section": "",
+    "text": "Week 3 focused on the processing involved in producing analysis ready data products from raw images."
+  },
+  {
+    "objectID": "04_policy.html",
+    "href": "04_policy.html",
+    "title": "4  Policy",
+    "section": "",
+    "text": "Week 4 focused on the applications of remote sensing to policy."
+  },
+  {
+    "objectID": "05_GEE.html",
+    "href": "05_GEE.html",
+    "title": "5  Google Earth Engine",
+    "section": "",
+    "text": "Week 5 focused on …"
+  },
+  {
+    "objectID": "06_classificaiton1.html",
+    "href": "06_classificaiton1.html",
+    "title": "6  Classification I",
+    "section": "",
+    "text": "Week 6 focused on"
+  },
+  {
+    "objectID": "07_classification2.html",
+    "href": "07_classification2.html",
+    "title": "7  Classificaiton II",
+    "section": "",
+    "text": "Week 7 focused on …"
+  },
+  {
+    "objectID": "08_Temperature.html",
+    "href": "08_Temperature.html",
+    "title": "8  Temperature",
+    "section": "",
+    "text": "Week 8 focused on …"
+  },
+  {
+    "objectID": "09_sar.html",
+    "href": "09_sar.html",
+    "title": "9  Synthetic Aperture Radar",
+    "section": "",
+    "text": "Week 9 focused on"
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Dong, Pinliang, and Qi Chen. 2017. LiDAR Remote Sensing and\nApplications. Boca Raton: CRC Press. https://doi.org/10.4324/9781351233354.\n\n\nLi, Jun, Yanqiu Pei, Shaohua Zhao, Rulin Xiao, Xiao Sang, and Chengye\nZhang. 2020. “A Review of Remote Sensing for Environmental\nMonitoring in China.” Remote Sensing 12 (7): 1130. https://doi.org/10.3390/rs12071130.\n\n\nSzpakowski, David M., and Jennifer L. R. Jensen. 2019. “A\nReview of the Applications of\nRemote Sensing in Fire\nEcology.” Remote Sensing 11 (22): 2638. https://doi.org/10.3390/rs11222638.\n\n\nWatts, Adam C., Vincent G. Ambrosia, and Everett A. Hinkley. 2012.\n“Unmanned Aircraft Systems in Remote Sensing and Scientific\nResearch: Classification and Considerations of Use.” Remote\nSensing 4 (6): 1671–92. https://doi.org/10.3390/rs4061671."
+  }
+]
