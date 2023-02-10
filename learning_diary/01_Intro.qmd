@@ -103,6 +103,8 @@ a -> {b c d e f g}
 
 Many academic studies use remotely sensed data to quantify changes temporally.
 
+1.  Flood and drought assessment
+
 SAR data can be used to identify water surface anomalies, allowing the identification of flooding or drought over large spatial extents. @lopez2020 used data to calculate the surface water areal fraction (SWAF) of the Amazon river basin to quantify changes in water content after the drought in 2010.
 
 ![Figure 3: Changes in SWAF in the Amazon basin during a drought event in 2010.](figures/10712_2020_9618_Fig7_HTML.png.webp)
