@@ -9,6 +9,13 @@ book:
     - index.qmd
     - 01_Intro.qmd
     - 02_Presentation.qmd
+    - 03_Corrections.qmd
+    - 04_policy.qmd
+    - 05_GEE.qmd
+    - 06_classificaiton1.qmd
+    - 07_classification2.qmd
+    - 08_Temperature.qmd
+    - 09_sar.qmd
     - references.qmd
 
 bibliography: references.bib

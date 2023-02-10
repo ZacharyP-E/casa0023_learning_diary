@@ -1,0 +1,3 @@
+# Corrections
+
+Week 3 focused on the processing involved in producing analysis ready data products from raw images.

@@ -4,7 +4,67 @@ Welcome
 
 ## Summary
 
-This weeks lecture looked at an overview of remote sensing for earth observation and its several of its applications.
+Remote sensing refers to techniques used to gather data for an object or area of interest without directly measuring it. This often makes use of sensors aboard satellites or aircraft [@li2020; @watts2012], but can also employ handheld measurements such as LIDAR [@dong2017].
+
+This has become an important tool for environmental research due to the large amounts of data becoming available, with relatively high temporal resolution.
+
+### How do they work?
+
+Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy initially originates from the sun, the sensor itself, or even man-made lights.
+
+The sensor records the level of radiation received, and processes it into an image.
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Measure electromagnetic radiation \nemitted or reflect from study area ']
+b [label = 'Convert measurements to digital data.']
+c [label = 'Process data into image']
+
+
+
+a -> b -> c
+}")
+
+```
+
+### Broad Classifications
+
+Sensors can be broken down into two broad classes, being passive and active.
+
+![Figure 1: Broad classifications of remote sensors.](https://www.researchgate.net/publication/339726853/figure/fig1/AS:865831357521920@1583441690681/Differences-between-passive-and-active-sensors.png)
+
+Image Source: @lopezornelas2016
+
++-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+|                   | Active                                                                     | Passive                                                                           |
++===================+============================================================================+===================================================================================+
+| **Energy Source** | Emits electromagnetic waves from sensor.                                   | Uses reflected energy from the sun                                                |
++-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| **Benefit**       | -   Can penetrate through clouds, and vegetation.                          | -   Cheaper and requiring less specialised hardware compared to Active sensors.   |
+|                   |                                                                            |                                                                                   |
+|                   | -   Control of sensor leads to highly accurate data.                       | -   Wider range of wavelengths providing a more comprehensive view.               |
++-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+| **Limitation**    | -   More expensive than passive sensors due to the required energy source. | -   Less effective during poor weather conditions.                                |
+|                   |                                                                            |                                                                                   |
+|                   | -   The emitted radiation can impact upon wildlife.                        | -   Suffers from shadow effects from vegetation (E.g. trees), soil and buildings. |
++-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
+
+### Resoloution
+
+The level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).
+
++-------------+---------------------------------------------+-----------------------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------------+
+|             | Spatial                                     | Temporal                                                  | Spectral                                                          | Radiometric                                             |
++=============+=============================================+===========================================================+===================================================================+=========================================================+
+| Description | The unit area that a single pixel spans.    | The time between usable successive images (revisit time). | The number of electromagnetic wave bands in an image.             | The number of bits representing the digitised waves. \| |
++-------------+---------------------------------------------+-----------------------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------------+
+| Importance  | Providing more detailed data on study area. | Ability to identify change through time.                  | Allows more detailed information on properties of the study area. | Identifying finer variations in reflected energy.       |
++-------------+---------------------------------------------+-----------------------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------------+
+| Units       | Feet or meters squared.                     | Days                                                      | Wavelength or band                                                | Bits                                                    |
++-------------+---------------------------------------------+-----------------------------------------------------------+-------------------------------------------------------------------+---------------------------------------------------------+
 
 ## Applications
 
@@ -28,6 +88,7 @@ a -> {b c d e f g}
 }")
 
 ```
+
 [@szpakowskiReviewApplicationsRemote2019]
 
 ## Reflection

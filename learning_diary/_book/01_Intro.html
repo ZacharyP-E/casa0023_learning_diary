@@ -133,6 +133,41 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./04_policy.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./06_classificaiton1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./08_Temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./09_sar.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -145,7 +180,12 @@ div.csl-indent {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">1.1</span>  Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">1.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#how-do-they-work" id="toc-how-do-they-work" class="nav-link" data-scroll-target="#how-do-they-work"><span class="toc-section-number">1.1.1</span>  How do they work?</a></li>
+  <li><a href="#broad-classifications" id="toc-broad-classifications" class="nav-link" data-scroll-target="#broad-classifications"><span class="toc-section-number">1.1.2</span>  Broad Classifications</a></li>
+  <li><a href="#resoloution" id="toc-resoloution" class="nav-link" data-scroll-target="#resoloution"><span class="toc-section-number">1.1.3</span>  Resoloution</a></li>
+  </ul></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="toc-section-number">1.2</span>  Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">1.3</span>  Reflection</a></li>
   </ul>
@@ -173,15 +213,126 @@ div.csl-indent {
 <p>Welcome</p>
 <section id="summary" class="level2" data-number="1.1">
 <h2 data-number="1.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">1.1</span> Summary</h2>
-<p>This weeks lecture looked at an overview of remote sensing for earth observation and its several of its applications.</p>
+<p>Remote sensing refers to techniques used to gather data for an object or area of interest without directly measuring it. This often makes use of sensors aboard satellites or aircraft <span class="citation" data-cites="li2020 watts2012">(<a href="references.html#ref-li2020" role="doc-biblioref">Li et al. 2020</a>; <a href="references.html#ref-watts2012" role="doc-biblioref">Watts, Ambrosia, and Hinkley 2012</a>)</span>, but can also employ handheld measurements such as LIDAR <span class="citation" data-cites="dong2017">(<a href="references.html#ref-dong2017" role="doc-biblioref">Dong and Chen 2017</a>)</span>.</p>
+<p>This has become an important tool for environmental research due to the large amounts of data becoming available, with relatively high temporal resolution.</p>
+<section id="how-do-they-work" class="level3" data-number="1.1.1">
+<h3 data-number="1.1.1" class="anchored" data-anchor-id="how-do-they-work"><span class="header-section-number">1.1.1</span> How do they work?</h3>
+<p>Remote sensors measure electromagnetic radiation emitted or reflected from a study area. This energy initially originates from the sun, the sensor itself, or even man-made lights.</p>
+<p>The sensor records the level of radiation received, and processes it into an image.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="htmlwidget-1b056dd117581c24de1c" style="width:100%;height:464px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-1b056dd117581c24de1c">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = TB]\n\na [label = \"Measure electromagnetic radiation \nemitted or reflect from study area \"]\nb [label = \"Convert measurements to digital data.\"]\nc [label = \"Process data into image\"]\n\n\n\na -> b -> c\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="broad-classifications" class="level3" data-number="1.1.2">
+<h3 data-number="1.1.2" class="anchored" data-anchor-id="broad-classifications"><span class="header-section-number">1.1.2</span> Broad Classifications</h3>
+<p>Sensors can be broken down into two broad classes, being passive and active.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://www.researchgate.net/publication/339726853/figure/fig1/AS:865831357521920@1583441690681/Differences-between-passive-and-active-sensors.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure 1: Broad classifications of remote sensors.</figcaption><p></p>
+</figure>
+</div>
+<p>Image Source: <span class="citation" data-cites="lopezornelas2016">Lopez Ornelas (<a href="references.html#ref-lopezornelas2016" role="doc-biblioref">2016</a>)</span></p>
+<table class="table">
+<colgroup>
+<col style="width: 10%">
+<col style="width: 42%">
+<col style="width: 46%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Active</th>
+<th>Passive</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Energy Source</strong></td>
+<td>Emits electromagnetic waves from sensor.</td>
+<td>Uses reflected energy from the sun</td>
+</tr>
+<tr class="even">
+<td><strong>Benefit</strong></td>
+<td><ul>
+<li><p>Can penetrate through clouds, and vegetation.</p></li>
+<li><p>Control of sensor leads to highly accurate data.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Cheaper and requiring less specialised hardware compared to Active sensors.</p></li>
+<li><p>Wider range of wavelengths providing a more comprehensive view.</p></li>
+</ul></td>
+</tr>
+<tr class="odd">
+<td><strong>Limitation</strong></td>
+<td><ul>
+<li><p>More expensive than passive sensors due to the required energy source.</p></li>
+<li><p>The emitted radiation can impact upon wildlife.</p></li>
+</ul></td>
+<td><ul>
+<li><p>Less effective during poor weather conditions.</p></li>
+<li><p>Suffers from shadow effects from vegetation (E.g. trees), soil and buildings.</p></li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="resoloution" class="level3" data-number="1.1.3">
+<h3 data-number="1.1.3" class="anchored" data-anchor-id="resoloution"><span class="header-section-number">1.1.3</span> Resoloution</h3>
+<p>The level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).</p>
+<table class="table">
+<colgroup>
+<col style="width: 5%">
+<col style="width: 18%">
+<col style="width: 24%">
+<col style="width: 27%">
+<col style="width: 23%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Spatial</th>
+<th>Temporal</th>
+<th>Spectral</th>
+<th>Radiometric</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Description</td>
+<td>The unit area that a single pixel spans.</td>
+<td>The time between usable successive images (revisit time).</td>
+<td>The number of electromagnetic wave bands in an image.</td>
+<td>The number of bits representing the digitised waves. |</td>
+</tr>
+<tr class="even">
+<td>Importance</td>
+<td>Providing more detailed data on study area.</td>
+<td>Ability to identify change through time.</td>
+<td>Allows more detailed information on properties of the study area.</td>
+<td>Identifying finer variations in reflected energy.</td>
+</tr>
+<tr class="odd">
+<td>Units</td>
+<td>Feet or meters squared.</td>
+<td>Days</td>
+<td>Wavelength or band</td>
+<td>Bits</td>
+</tr>
+</tbody>
+</table>
+</section>
 </section>
 <section id="applications" class="level2" data-number="1.2">
 <h2 data-number="1.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">1.2</span> Applications</h2>
 <p>The ability of satellites to revisit the same point on earth every 16 days, allows for an extensive list of applications.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="htmlwidget-bae96f9f89559c40ba9d" style="width:100%;height:464px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-bae96f9f89559c40ba9d">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Remote Sensing\", shape = square, fillcolor = Black]\nb [label = \"Climate Research\"]\nc [label = \"Natural Hazard Managment\"]\nd [label = \"Urban planning\"]\ne [label = \"Weather Forcasting\"]\nf [label = \"Ocenography\"]\ng [label = \"Intelligence Gathering\"]\n\n\na -> {b c d e f g}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-34dfe96fa0d224f0ceeb" style="width:100%;height:464px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-34dfe96fa0d224f0ceeb">{"x":{"diagram":"digraph {\n  \ngraph[layout = dot, rankdir = LR]\n\na [label = \"Remote Sensing\", shape = square, fillcolor = Black]\nb [label = \"Climate Research\"]\nc [label = \"Natural Hazard Managment\"]\nd [label = \"Urban planning\"]\ne [label = \"Weather Forcasting\"]\nf [label = \"Ocenography\"]\ng [label = \"Intelligence Gathering\"]\n\n\na -> {b c d e f g}\n}","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><span class="citation" data-cites="szpakowskiReviewApplicationsRemote2019">(<a href="references.html#ref-szpakowskiReviewApplicationsRemote2019" role="doc-biblioref">Szpakowski and Jensen 2019</a>)</span></p>
@@ -191,8 +342,20 @@ div.csl-indent {
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-dong2017" class="csl-entry" role="doc-biblioentry">
+Dong, Pinliang, and Qi Chen. 2017. <em>LiDAR Remote Sensing and Applications</em>. Boca Raton: CRC Press. <a href="https://doi.org/10.4324/9781351233354">https://doi.org/10.4324/9781351233354</a>.
+</div>
+<div id="ref-li2020" class="csl-entry" role="doc-biblioentry">
+Li, Jun, Yanqiu Pei, Shaohua Zhao, Rulin Xiao, Xiao Sang, and Chengye Zhang. 2020. <span>“A Review of Remote Sensing for Environmental Monitoring in China.”</span> <em>Remote Sensing</em> 12 (7): 1130. <a href="https://doi.org/10.3390/rs12071130">https://doi.org/10.3390/rs12071130</a>.
+</div>
+<div id="ref-lopezornelas2016" class="csl-entry" role="doc-biblioentry">
+Lopez Ornelas, Fernanda. 2016. <span>“The Mexican Water Forest: Benefits of Using Remote Sensing Techniques to Assess Changes in Land Use and Land Cover.”</span> PhD thesis. <a href="https://doi.org/10.13140/RG.2.2.11855.43685">https://doi.org/10.13140/RG.2.2.11855.43685</a>.
+</div>
 <div id="ref-szpakowskiReviewApplicationsRemote2019" class="csl-entry" role="doc-biblioentry">
 Szpakowski, David M., and Jennifer L. R. Jensen. 2019. <span>“A <span>Review</span> of the <span>Applications</span> of <span>Remote</span> <span>Sensing</span> in <span>Fire</span> <span>Ecology</span>.”</span> <em>Remote Sensing</em> 11 (22): 2638. <a href="https://doi.org/10.3390/rs11222638">https://doi.org/10.3390/rs11222638</a>.
+</div>
+<div id="ref-watts2012" class="csl-entry" role="doc-biblioentry">
+Watts, Adam C., Vincent G. Ambrosia, and Everett A. Hinkley. 2012. <span>“Unmanned Aircraft Systems in Remote Sensing and Scientific Research: Classification and Considerations of Use.”</span> <em>Remote Sensing</em> 4 (6): 1671–92. <a href="https://doi.org/10.3390/rs4061671">https://doi.org/10.3390/rs4061671</a>.
 </div>
 </div>
 </section>
