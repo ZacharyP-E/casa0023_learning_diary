@@ -6,7 +6,7 @@ Week 2 focused on the use of code to present and host websites and slides, allow
 ```{r, echo = FALSE, out.width='40%'}
 xaringanExtra::embed_xaringan(
   url = "https://zacharyp-e.github.io/casa0023_pres/presentation.html#1",
-  ratio = "16:9")
+  ratio = "4:3")
 ```
 
 
