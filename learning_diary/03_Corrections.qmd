@@ -1,3 +1,57 @@
-# Corrections
+# Remote Sensing Data
 
 Week 3 focused on the processing involved in producing analysis ready data products from raw images.
+
+## Summary
+
+### Satellite Data Acquisition
+
+There are two ways in which satellites collect remotely sensed data.
+
++-----------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+|                 | Push Broom                                                                           | Whisk Broom                                                                           |
++=================+======================================================================================+=======================================================================================+
+| **Description** | A continuous line, covering a large swath over a large study area.                   | Taking multiple passes over a more localised study area.                              |
++-----------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| **Image**       | ![](https://www.l3harrisgeospatial.com/portals/0/blogs/imageryspeaks/push_broom.jpg) | ![](https://www.l3harrisgeospatial.com/portals/0/blogs/imageryspeaks/whisk_broom.jpg) |
++-----------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| **Benefits**    | -   Efficient over large scales                                                      | -   High spatial resolution                                                           |
+|                 |                                                                                      |                                                                                       |
+|                 | -   Covers wide area in one go                                                       |                                                                                       |
++-----------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+| **Limitations** | -   Lower spatial resolution                                                         | -   Slower than push broom method.                                                    |
++-----------------+--------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+
+Image Sources: @shippert
+
+### Corrections
+
+Due to natural variability corrections are used to remove the imapcts various factors have on collected images. This will give a more accurate view of the study area.
+
+#### Geometric Correction
+
+more needed
+
+#### Atmospheric Correction
+
+Removing the effects of atmospheric interference on imagery, to improve quality. Interference comes from the scattering of incoming light, and the absorption of that being reflected. Both of which can result in a poor representation of the study area.
+
+Correction
+
+#### Empirical Line Correction
+
+Correcting for the non-uniform
+
+more needed
+
+#### Topographic (Orthorectification) Correction
+
+Correcting for topographic features disrupting the reluctance values, as caused by shadows and slopes. By identifying the Solar Zenith Angle (SZA) and the Viewing Zenith Angle (VZA) the amount of illumination of the target area can be calculated, allowing essential correction to more accurately represent the study area.
+
+#### Radiometric Correction
+
+Adjusting the values of imagery to account for variation within the sensors sensitivity. Therefore, allowing for a more consistent account of the conditions being monitored within the study area.
+
+## Applications
+
+## Reflection

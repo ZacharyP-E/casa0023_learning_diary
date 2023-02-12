@@ -32,12 +32,12 @@
     "href": "02_Presentation.html",
     "title": "2  Presentation",
     "section": "",
-    "text": "[Link]"
+    "text": "Or use this [Link]"
   },
   {
     "objectID": "03_Corrections.html",
     "href": "03_Corrections.html",
-    "title": "3  Corrections",
+    "title": "3  Remote Sensing Data",
     "section": "",
     "text": "Week 3 focused on the processing involved in producing analysis ready data products from raw images."
   },
@@ -89,5 +89,26 @@
     "title": "References",
     "section": "",
     "text": "Dong, Pinliang, and Qi Chen. 2017. LiDAR Remote Sensing and\nApplications. Boca Raton: CRC Press. https://doi.org/10.4324/9781351233354.\n\n\nLi, Jun, Yanqiu Pei, Shaohua Zhao, Rulin Xiao, Xiao Sang, and Chengye\nZhang. 2020. “A Review of Remote Sensing for Environmental\nMonitoring in China.” Remote Sensing 12 (7): 1130. https://doi.org/10.3390/rs12071130.\n\n\nLopez Ornelas, Fernanda. 2016. “The Mexican Water Forest: Benefits\nof Using Remote Sensing Techniques to Assess Changes in Land Use and\nLand Cover.” PhD thesis. https://doi.org/10.13140/RG.2.2.11855.43685.\n\n\nSzpakowski, David M., and Jennifer L. R. Jensen. 2019. “A\nReview of the Applications of\nRemote Sensing in Fire\nEcology.” Remote Sensing 11 (22): 2638. https://doi.org/10.3390/rs11222638.\n\n\nWatts, Adam C., Vincent G. Ambrosia, and Everett A. Hinkley. 2012.\n“Unmanned Aircraft Systems in Remote Sensing and Scientific\nResearch: Classification and Considerations of Use.” Remote\nSensing 4 (6): 1671–92. https://doi.org/10.3390/rs4061671.\n\n\nYoung, Oran, and Masami Onoda. 2017. “Satellite Earth Observations\nin Environmental Problem-Solving.” In, 3–27."
+  },
+  {
+    "objectID": "03_Corrections.html#summary",
+    "href": "03_Corrections.html#summary",
+    "title": "3  Remote Sensing Data",
+    "section": "3.1 Summary",
+    "text": "3.1 Summary\n\n3.1.1 Satellite Data Acquisition\nThere are two ways in which satellites collect remotely sensed data.\n\n\n\n\n\n\n\n\n\nPush Broom\nWhisk Broom\n\n\n\n\nDescription\nA continuous line, covering a large swath over a large study area.\nTaking multiple passes over a more localised study area.\n\n\nImage\n\n\n\n\nBenefits\n\nEfficient over large scales\nCovers wide area in one go\n\n\nHigh spatial resolution\n\n\n\nLimitations\n\nLower spatial resolution\n\n\nSlower than push broom method.\n\n\n\n\nImage Sources: Shippert (n.d.)\n\n\n3.1.2 Corrections\nDue to natural variability corrections are used to remove the imapcts various factors have on collected images. This will give a more accurate view of the study area.\n\n3.1.2.1 Geometric Correction\nmore needed\n\n\n3.1.2.2 Atmospheric Correction\nRemoving the effects of atmospheric interference on imagery, to improve quality. Interference comes from the scattering of incoming light, and the absorption of that being reflected. Both of which can result in a poor representation of the study area.\nCorrection\n\n\n3.1.2.3 Empirical Line Correction\nCorrecting for the non-uniform\nmore needed\n\n\n3.1.2.4 Topographic (Orthorectification) Correction\nCorrecting for topographic features disrupting the reluctance values, as caused by shadows and slopes. By identifying the Solar Zenith Angle (SZA) and the Viewing Zenith Angle (VZA) the amount of illumination of the target area can be calculated, allowing essential correction to more accurately represent the study area.\n\n\n3.1.2.5 Radiometric Correction\nAdjusting the values of imagery to account for variation within the sensors sensitivity. Therefore, allowing for a more consistent account of the conditions being monitored within the study area."
+  },
+  {
+    "objectID": "03_Corrections.html#applications",
+    "href": "03_Corrections.html#applications",
+    "title": "3  Remote Sensing Data",
+    "section": "3.2 Applications",
+    "text": "3.2 Applications"
+  },
+  {
+    "objectID": "03_Corrections.html#reflection",
+    "href": "03_Corrections.html#reflection",
+    "title": "3  Remote Sensing Data",
+    "section": "3.3 Reflection",
+    "text": "3.3 Reflection\n\n\n\n\nShippert, Peg. n.d. “Push Broom and Whisk Broom Sensors.” https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors."
   }
 ]

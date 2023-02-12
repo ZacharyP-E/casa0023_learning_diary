@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>casa0023_learning_diary - 3&nbsp; Corrections</title>
+<title>casa0023_learning_diary - 3&nbsp; Remote Sensing Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -110,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -120,27 +139,27 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./05_GEE.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Google Earth Engine</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./06_classificaiton1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./06_classificaiton1.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Classification I</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./08_Temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./08_Temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09_sar.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Policy</span></a>
+  <a href="./09_sar.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,14 +172,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">3.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#satellite-data-acquisition" id="toc-satellite-data-acquisition" class="nav-link" data-scroll-target="#satellite-data-acquisition"><span class="toc-section-number">3.1.1</span>  Satellite Data Acquisition</a></li>
+  <li><a href="#corrections" id="toc-corrections" class="nav-link" data-scroll-target="#corrections"><span class="toc-section-number">3.1.2</span>  Corrections</a></li>
+  </ul></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="toc-section-number">3.2</span>  Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">3.3</span>  Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></h1>
 </div>
 
 
@@ -175,8 +206,98 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Week 3 focused on the processing involved in producing analysis ready data products from raw images.</p>
+<section id="summary" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">3.1</span> Summary</h2>
+<section id="satellite-data-acquisition" class="level3" data-number="3.1.1">
+<h3 data-number="3.1.1" class="anchored" data-anchor-id="satellite-data-acquisition"><span class="header-section-number">3.1.1</span> Satellite Data Acquisition</h3>
+<p>There are two ways in which satellites collect remotely sensed data.</p>
+<table class="table">
+<colgroup>
+<col style="width: 9%">
+<col style="width: 44%">
+<col style="width: 45%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th>Push Broom</th>
+<th>Whisk Broom</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Description</strong></td>
+<td>A continuous line, covering a large swath over a large study area.</td>
+<td>Taking multiple passes over a more localised study area.</td>
+</tr>
+<tr class="even">
+<td><strong>Image</strong></td>
+<td><img src="https://www.l3harrisgeospatial.com/portals/0/blogs/imageryspeaks/push_broom.jpg" class="img-fluid"></td>
+<td><img src="https://www.l3harrisgeospatial.com/portals/0/blogs/imageryspeaks/whisk_broom.jpg" class="img-fluid"></td>
+</tr>
+<tr class="odd">
+<td><strong>Benefits</strong></td>
+<td><ul>
+<li><p>Efficient over large scales</p></li>
+<li><p>Covers wide area in one go</p></li>
+</ul></td>
+<td><ul>
+<li>High spatial resolution</li>
+</ul></td>
+</tr>
+<tr class="even">
+<td><strong>Limitations</strong></td>
+<td><ul>
+<li>Lower spatial resolution</li>
+</ul></td>
+<td><ul>
+<li>Slower than push broom method.</li>
+</ul></td>
+</tr>
+</tbody>
+</table>
+<p>Image Sources: <span class="citation" data-cites="shippert">Shippert (<a href="references.html#ref-shippert" role="doc-biblioref">n.d.</a>)</span></p>
+</section>
+<section id="corrections" class="level3" data-number="3.1.2">
+<h3 data-number="3.1.2" class="anchored" data-anchor-id="corrections"><span class="header-section-number">3.1.2</span> Corrections</h3>
+<p>Due to natural variability corrections are used to remove the imapcts various factors have on collected images. This will give a more accurate view of the study area.</p>
+<section id="geometric-correction" class="level4" data-number="3.1.2.1">
+<h4 data-number="3.1.2.1" class="anchored" data-anchor-id="geometric-correction"><span class="header-section-number">3.1.2.1</span> Geometric Correction</h4>
+<p>more needed</p>
+</section>
+<section id="atmospheric-correction" class="level4" data-number="3.1.2.2">
+<h4 data-number="3.1.2.2" class="anchored" data-anchor-id="atmospheric-correction"><span class="header-section-number">3.1.2.2</span> Atmospheric Correction</h4>
+<p>Removing the effects of atmospheric interference on imagery, to improve quality. Interference comes from the scattering of incoming light, and the absorption of that being reflected. Both of which can result in a poor representation of the study area.</p>
+<p>Correction</p>
+</section>
+<section id="empirical-line-correction" class="level4" data-number="3.1.2.3">
+<h4 data-number="3.1.2.3" class="anchored" data-anchor-id="empirical-line-correction"><span class="header-section-number">3.1.2.3</span> Empirical Line Correction</h4>
+<p>Correcting for the non-uniform</p>
+<p>more needed</p>
+</section>
+<section id="topographic-orthorectification-correction" class="level4" data-number="3.1.2.4">
+<h4 data-number="3.1.2.4" class="anchored" data-anchor-id="topographic-orthorectification-correction"><span class="header-section-number">3.1.2.4</span> Topographic (Orthorectification) Correction</h4>
+<p>Correcting for topographic features disrupting the reluctance values, as caused by shadows and slopes. By identifying the Solar Zenith Angle (SZA) and the Viewing Zenith Angle (VZA) the amount of illumination of the target area can be calculated, allowing essential correction to more accurately represent the study area.</p>
+</section>
+<section id="radiometric-correction" class="level4" data-number="3.1.2.5">
+<h4 data-number="3.1.2.5" class="anchored" data-anchor-id="radiometric-correction"><span class="header-section-number">3.1.2.5</span> Radiometric Correction</h4>
+<p>Adjusting the values of imagery to account for variation within the sensors sensitivity. Therefore, allowing for a more consistent account of the conditions being monitored within the study area.</p>
+</section>
+</section>
+</section>
+<section id="applications" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
+</section>
+<section id="reflection" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-shippert" class="csl-entry" role="doc-biblioentry">
+Shippert, Peg. n.d. <span>“Push Broom and Whisk Broom Sensors.”</span> <a href="https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors">https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
