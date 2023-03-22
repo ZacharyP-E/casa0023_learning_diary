@@ -64,6 +64,6 @@ Though there are extensive benefits to the semi-automation of crop yield predict
 
 A summary of this section can be seen in @fig-farmer-meme.
 
-![Summary meme. Image source: [Link](https://bloximages.chicago2.vip.townnews.com/sentinelsource.com/content/tncms/assets/v3/editorial/2/63/2637e3c2-81f1-11eb-a3f6-1bac6a0f2ea2/60494a2bdcd99.image.jpg?resize=400%2C267), meme made by author.](figures/When you want to predict crop yields but you also want to save time and money.png){#fig-farmer-meme}
+![Summary meme. Image source: [Link](https://bloximages.chicago2.vip.townnews.com/sentinelsource.com/content/tncms/assets/v3/editorial/2/63/2637e3c2-81f1-11eb-a3f6-1bac6a0f2ea2/60494a2bdcd99.image.jpg?resize=400%2C267), meme made by author.](https://i.ibb.co/y6JsmvL/When-you-want-to-predict-crop-yields-but-you-also-want-to-save-time-and-money.png){#fig-farmer-meme}
 
 ## Refleneural
