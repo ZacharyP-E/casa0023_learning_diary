@@ -6,19 +6,21 @@ Week 6 focused on
 
 Week 6 focused on the use of classification techniques within remotely sensed data, with some use cases looking at illegal logging identified by the Brazilian polices force to have a near real-time response to new bouts of activity.
 
-The classification techniques included involve:
+The classification techniques included involve: 
 
--   Linear regression
+- Linear regression 
+-  Classification and regression trees (CART) 
+  -  With a specific look into the limitations such as overfitting involved. 
 
--   Classification and regression trees (CART)
+- Random forests can be used to skirt these downfalls with multiple iterations.
 
--   With a specific look into the limitations such as overfitting involved.
 
--   Random forests can be used to skirt these downfalls with multiple iterations.
 
 Another group sees unsupervised learning.
 
--   Support Vector Machine (SVM)
+- Support Vector Machine (SVM)
+
+
 
 However, the use of these methods should be thought over due to the resemblance to a black box.
 
@@ -44,22 +46,24 @@ In this section, one use of classification techniques in the real world is ident
 
 Classification techniques have a multitude of applications within remote sensing research, a key research topic being the prediction of crop yields. It provides stakeholders (farmers, academics and government officials) with an efficient and relatively accurate means to identify the yield of a field, therefore allowing informed decisions to be made. The work of both @dang2021, and @zhu2021 used Support Vector Regression (SVR), Random Forest Regression (RFR) and Deep Neural Networks (DNN) to explain an average of 80% of the variation within their crop yields. This suggests that classification techniques could be of use to different scale groups:
 
-| Scale               | Small Scale                                                                                                                      | Large Scale                                                                                                                                        |
-|---------------------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Group**           | Farmers                                                                                                                          | Governments                                                                                                                                        |
-| **Possible uses 1** | **Access to finance:** Financial institutions may provide more favourable terms on their loans with evidence of expected yields. | **Improved food security:** Governments can plan for food droughts by taking appropriate measures during a year of low expected crop yields.       |
+| Scale               | Small Scale                                                  | Large Scale                                                  |
+| ------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **Group**           | Farmers                                                      | Governments                                                  |
+| **Possible uses 1** | **Access to finance:** Financial institutions may provide more favourable terms on their loans with evidence of expected yields. | **Improved food security:** Governments can plan for food droughts by taking appropriate measures during a year of low expected crop yields. |
 | **Possible uses 2** | **Access to finance:** Financial institutions may provide more favourable terms on their loans with evidence of expected yields. | **Increased tax accuracy:** Government GIS departments can compare reported yields from farmers to that predicted using classification techniques. |
 
 Though there are extensive benefits to the semi-automation of crop yield prediction using remote sensing, caution should be had before adopting this methodology. @khanal2020 noted several criticisms of this methodology, including:
 
--   The limited **spatial resolution** could lead to missing key points of interest.
--   Possible **inaccurate sensor calibration** leading to over/ underestimation of the yield
--   Extensive **data processing** before insights can be extracted
+- The limited **spatial resolution** could lead to missing key points of interest.
+- Possible **inaccurate sensor calibration** leading to over/ underestimation of the yield
+- Extensive **data processing** before insights can be extracted
 
-@rojas2007 proposed the use of ground validation to mitigate these limitations. As this would not only allow for more accurate modelling in the future but also more confidence to be had for the existing image sets.
+@rojas2007 proposed the use of ground validation to mitigate these limitations. As this would not only allow for more accurate modelling in the future but also more confidence to be had for the existing image sets. 
+
+
 
 A summary of this section can be seen in @fig-farmer-meme.
 
-![Summary meme. Image source: [Link](https://bloximages.chicago2.vip.townnews.com/sentinelsource.com/content/tncms/assets/v3/editorial/2/63/2637e3c2-81f1-11eb-a3f6-1bac6a0f2ea2/60494a2bdcd99.image.jpg?resize=400%2C267), meme made by author.](figures/When%20you%20want%20to%20predict%20crop%20yields%20but%20you%20also%20want%20to%20save%20time%20and%20money.png){#fig-farmer-meme}
+![Summary meme. Image source: [Link](https://bloximages.chicago2.vip.townnews.com/sentinelsource.com/content/tncms/assets/v3/editorial/2/63/2637e3c2-81f1-11eb-a3f6-1bac6a0f2ea2/60494a2bdcd99.image.jpg?resize=400%2C267), meme made by author.](figures/When you want to predict crop yields but you also want to save time and money.png){#fig-farmer-meme}
 
 ## Refleneural

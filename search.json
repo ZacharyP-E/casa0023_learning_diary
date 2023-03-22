@@ -110,5 +110,152 @@
     "title": "3  Remote Sensing Data",
     "section": "3.3 Reflection",
     "text": "3.3 Reflection\n\n\n\n\nShippert, Peg. n.d. “Push Broom and Whisk Broom Sensors.” https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors."
+  },
+  {
+    "objectID": "05_GEE.html#summary",
+    "href": "05_GEE.html#summary",
+    "title": "5  Google Earth Engine",
+    "section": "5.1 Summary",
+    "text": "5.1 Summary\nGoogle earth engine is an open access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization. Allowing users to make use of Googles computing resources to process computationally expensive tasks.\nUsers can interact with the platform in two ways:\n\nGoogle Earth Engine Website\nPython/ R API\n\n\n5.1.1 GEE Functions\n\n5.1.1.1 Spatial operations\n\nJoins\n\nRemotely sensed imagery that intersects can be joined. This can be concurrent images through time, or images adjacent in space.\n\nZonal Statistics\nFiltering of images\n\n\n\n5.1.1.2 Image reduction\nImage reducing summarises imagrey either through time (reducing number of images) or through space (reducing resolotuion of imagrey).\nReducing through time would see aggregation of each pixel by a statistical measure, such as the mean or median.\nSpatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximety to local pixels, or a sumary within a specified polygon.\n\n5.1.1.2.1 Regression\nRegression can also function as a form of image reduction, allowing identification of change over time within a pixel."
+  },
+  {
+    "objectID": "05_GEE.html#application",
+    "href": "05_GEE.html#application",
+    "title": "5  Google Earth Engine",
+    "section": "5.2 Application",
+    "text": "5.2 Application"
+  },
+  {
+    "objectID": "05_GEE.html#reflection",
+    "href": "05_GEE.html#reflection",
+    "title": "5  Google Earth Engine",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection\nThe ability for remote sensing research to be coded in google earth engine and its API’s provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing from the analysis being performed remotley on Google’s servers) of the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).\nHowever, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE."
+  },
+  {
+    "objectID": "04_policy.html#summary",
+    "href": "04_policy.html#summary",
+    "title": "4  Policy",
+    "section": "4.1 Summary",
+    "text": "4.1 Summary\nSummary of the policy and city you have selected."
+  },
+  {
+    "objectID": "04_policy.html#application",
+    "href": "04_policy.html#application",
+    "title": "4  Policy",
+    "section": "4.2 Application",
+    "text": "4.2 Application\nHow the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge."
+  },
+  {
+    "objectID": "04_policy.html#reflection",
+    "href": "04_policy.html#reflection",
+    "title": "4  Policy",
+    "section": "4.3 Reflection",
+    "text": "4.3 Reflection\nWhat you have learnt in relation to the policy, city and the application of the data."
+  },
+  {
+    "objectID": "06_classificaiton1.html#summary",
+    "href": "06_classificaiton1.html#summary",
+    "title": "6  Classification I",
+    "section": "6.1 Summary",
+    "text": "6.1 Summary\nWeek 6 focused on the use of classification techniques within remotely sensed data, with some use cases looking at illegal logging identified by the Brazilian polices force to have a near real-time response to new bouts of activity.\nThe classification techniques included involve:\n\nLinear regression\nClassification and regression trees (CART)\nWith a specific look into the limitations such as overfitting involved.\nRandom forests can be used to skirt these downfalls with multiple iterations.\n\nAnother group sees unsupervised learning.\n\nSupport Vector Machine (SVM)\n\nHowever, the use of these methods should be thought over due to the resemblance to a black box.\nClassification techniques are an integral stage required to efficiently process and analyse remotely sensed data, due to the sheer volume of images acquired. Pixels are grouped with their neighbours based on their spectral characteristics, allowing both spatial and temporal analysis of trends.\nSupervised classification refers to the use of training a model on existing data, allowing the algorithm to learn the characteristics attributable to various land cover types. This can then be applied to unseen data accurately and reliably. However, this technique comes with a high initial cost for creating the training data.\n\n\n\n\n\n\nSupport Vector Machines (SVMs)\n\n\n\nSVMs are a linear binary classification technique that separates points with a boundary, called a ‘separating hyperplane’. This identifies the largest margin between the classes, allowing increased generalisation performance across the unseen data.\n\n\n\nFigure 6.1: Support vector machines.\n\n\n\n\nUnsupervised classification, on the other hand, is an approach that can be applied when there is limited knowledge of the area of study. This is often referred to as a clustering technique, where similar spectral values are grouped. After which, are interpreted by the user. These techniques benefit from not requiring prelabeled data. However, it can often be difficult to interpret the classes, due to the black box-like nature of the model (meaning it is not clear how the classes were separated).\nTo conclude, the efficient identification of reliable and accurate land use and cover types through time requires the use of classification techniques. Supervised and Unsupervised learning methods will be chosen based on their relative strengths and weaknesses."
+  },
+  {
+    "objectID": "06_classificaiton1.html#application",
+    "href": "06_classificaiton1.html#application",
+    "title": "6  Classification I",
+    "section": "6.2 Application",
+    "text": "6.2 Application\nIn this section, one use of classification techniques in the real world is identified and relevant literature is reviewed.\nClassification techniques have a multitude of applications within remote sensing research, a key research topic being the prediction of crop yields. It provides stakeholders (farmers, academics and government officials) with an efficient and relatively accurate means to identify the yield of a field, therefore allowing informed decisions to be made. The work of both Dang et al. (2021), and Zhu, Wang, and Luo (2021) used Support Vector Regression (SVR), Random Forest Regression (RFR) and Deep Neural Networks (DNN) to explain an average of 80% of the variation within their crop yields. This suggests that classification techniques could be of use to different scale groups:\n\n\n\n\n\n\n\n\nScale\nSmall Scale\nLarge Scale\n\n\n\n\nGroup\nFarmers\nGovernments\n\n\nPossible uses 1\nAccess to finance: Financial institutions may provide more favourable terms on their loans with evidence of expected yields.\nImproved food security: Governments can plan for food droughts by taking appropriate measures during a year of low expected crop yields.\n\n\nPossible uses 2\nAccess to finance: Financial institutions may provide more favourable terms on their loans with evidence of expected yields.\nIncreased tax accuracy: Government GIS departments can compare reported yields from farmers to that predicted using classification techniques.\n\n\n\nThough there are extensive benefits to the semi-automation of crop yield prediction using remote sensing, caution should be had before adopting this methodology. Khanal et al. (2020) noted several criticisms of this methodology, including:\n\nThe limited spatial resolution could lead to missing key points of interest.\nPossible inaccurate sensor calibration leading to over/ underestimation of the yield\nExtensive data processing before insights can be extracted\n\nRojas (2007) proposed the use of ground validation to mitigate these limitations. As this would not only allow for more accurate modelling in the future but also more confidence to be had for the existing image sets.\nA summary of this section can be seen in Figure 6.2.\n\n\n\nFigure 6.2: Summary meme. Image source: Link, meme made by author."
+  },
+  {
+    "objectID": "06_classificaiton1.html#reflection",
+    "href": "06_classificaiton1.html#reflection",
+    "title": "6  Classification I",
+    "section": "6.3 Reflection",
+    "text": "6.3 Reflection\n\n\n\n\nDang, Chaoya, Ying Liu, Hui Yue, JiaXin Qian, and Rong Zhu. 2021. “Autumn Crop Yield Prediction Using Data-Driven Approaches:- Support Vector Machines, Random Forest, and Deep Neural Network Methods.” Canadian Journal of Remote Sensing 47 (2): 162–81. https://doi.org/10.1080/07038992.2020.1833186."
+  },
+  {
+    "objectID": "07_classification2.html#summary",
+    "href": "07_classification2.html#summary",
+    "title": "7  Classificaiton II",
+    "section": "7.1 Summary",
+    "text": "7.1 Summary"
+  },
+  {
+    "objectID": "07_classification2.html#application",
+    "href": "07_classification2.html#application",
+    "title": "7  Classificaiton II",
+    "section": "7.2 Application",
+    "text": "7.2 Application"
+  },
+  {
+    "objectID": "07_classification2.html#reflection",
+    "href": "07_classification2.html#reflection",
+    "title": "7  Classificaiton II",
+    "section": "7.3 Reflection",
+    "text": "7.3 Reflection"
+  },
+  {
+    "objectID": "08_Temperature.html#summary",
+    "href": "08_Temperature.html#summary",
+    "title": "8  Temperature",
+    "section": "8.1 Summary",
+    "text": "8.1 Summary\nWeek 8 focused on the use of remote sensing data to advise policy related to urban temperatures."
+  },
+  {
+    "objectID": "08_Temperature.html#application",
+    "href": "08_Temperature.html#application",
+    "title": "8  Temperature",
+    "section": "8.3 Application",
+    "text": "8.3 Application"
+  },
+  {
+    "objectID": "08_Temperature.html#reflection",
+    "href": "08_Temperature.html#reflection",
+    "title": "8  Temperature",
+    "section": "8.4 Reflection",
+    "text": "8.4 Reflection\n\n\n\n\n“Urban Heat Island | World Meteorological Organization.” n.d. https://community.wmo.int/en/activity-areas/urban/urban-heat-island."
+  },
+  {
+    "objectID": "09_sar.html#summary",
+    "href": "09_sar.html#summary",
+    "title": "9  Synthetic Aperture Radar",
+    "section": "9.1 Summary",
+    "text": "9.1 Summary"
+  },
+  {
+    "objectID": "09_sar.html#application",
+    "href": "09_sar.html#application",
+    "title": "9  Synthetic Aperture Radar",
+    "section": "9.2 Application",
+    "text": "9.2 Application"
+  },
+  {
+    "objectID": "09_sar.html#reflection",
+    "href": "09_sar.html#reflection",
+    "title": "9  Synthetic Aperture Radar",
+    "section": "9.3 Reflection",
+    "text": "9.3 Reflection"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "casa0023_learning_diary",
+    "section": "",
+    "text": "A learning diary for the module CASA0025 - Remote Sensing for Earth Observation, featured in the CASA, UCL MSc programe."
+  },
+  {
+    "objectID": "08_Temperature.html#urban-heat-island",
+    "href": "08_Temperature.html#urban-heat-island",
+    "title": "8  Temperature",
+    "section": "8.2 Urban Heat Island",
+    "text": "8.2 Urban Heat Island\nSurface temperatures in urban areas have been found to be higher than their rural counterparts, due to the . This can be seen in Figure 8.1.\n\n\n\nFigure 8.1: Temperature differences between urban and rural areas.\n\n\nImage Source: “Urban Heat Island | World Meteorological Organization” (n.d.)"
+  },
+  {
+    "objectID": "06_classificaiton1.html#refleneural",
+    "href": "06_classificaiton1.html#refleneural",
+    "title": "6  Classification I",
+    "section": "6.3 Refleneural",
+    "text": "6.3 Refleneural\n\n\n\n\nDang, Chaoya, Ying Liu, Hui Yue, JiaXin Qian, and Rong Zhu. 2021. “Autumn Crop Yield Prediction Using Data-Driven Approaches:- Support Vector Machines, Random Forest, and Deep Neural Network Methods.” Canadian Journal of Remote Sensing 47 (2): 162–81. https://doi.org/10.1080/07038992.2020.1833186.\n\n\nKhanal, Sami, Kushal Kc, John P. Fulton, Scott Shearer, and Erdal Ozkan. 2020. “Remote Sensing in Agriculture, Limitations, and Opportunities.” Remote Sensing 12 (22): 3783. https://doi.org/10.3390/rs12223783.\n\n\nRojas, O. 2007. “Operational Maize Yield Model Development and Validation Based on Remote Sensing and Agro-Meteorological Data in Kenya.” International Journal of Remote Sensing 28 (17): 3775–93. https://doi.org/10.1080/01431160601075608.\n\n\nZhu, Qian, Yushi Wang, and Yulin Luo. 2021. “Improvement of Multi-Layer Soil Moisture Prediction Using Support Vector Machines and Ensemble Kalman Filter Coupled with Remote Sensing Soil Moisture Datasets over an Agriculture Dominant Basin in China.” Hydrological Processes 35 (4): e14154. https://doi.org/10.1002/hyp.14154."
   }
 ]

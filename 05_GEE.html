@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -145,6 +145,11 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">References</a>
   </div>
 </li>
@@ -153,7 +158,18 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">5.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#gee-functions" id="toc-gee-functions" class="nav-link" data-scroll-target="#gee-functions"><span class="toc-section-number">5.1.1</span>  GEE Functions</a></li>
+  </ul></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">5.2</span>  Application</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">5.3</span>  Reflection</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,8 +191,49 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Week 5 focused on …</p>
+<section id="summary" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
+<p>Google earth engine is an open access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization. Allowing users to make use of Googles computing resources to process computationally expensive tasks.</p>
+<p>Users can interact with the platform in two ways:</p>
+<ul>
+<li><p>Google Earth Engine Website</p></li>
+<li><p>Python/ R API</p></li>
+</ul>
+<section id="gee-functions" class="level3" data-number="5.1.1">
+<h3 data-number="5.1.1" class="anchored" data-anchor-id="gee-functions"><span class="header-section-number">5.1.1</span> GEE Functions</h3>
+<section id="spatial-operations" class="level4" data-number="5.1.1.1">
+<h4 data-number="5.1.1.1" class="anchored" data-anchor-id="spatial-operations"><span class="header-section-number">5.1.1.1</span> Spatial operations</h4>
+<ul>
+<li><p>Joins</p>
+<ul>
+<li>Remotely sensed imagery that intersects can be joined. This can be concurrent images through time, or images adjacent in space.</li>
+</ul></li>
+<li><p>Zonal Statistics</p></li>
+<li><p>Filtering of images</p></li>
+</ul>
+</section>
+<section id="image-reduction" class="level4" data-number="5.1.1.2">
+<h4 data-number="5.1.1.2" class="anchored" data-anchor-id="image-reduction"><span class="header-section-number">5.1.1.2</span> Image reduction</h4>
+<p>Image reducing summarises imagrey either through time (reducing number of images) or through space (reducing resolotuion of imagrey).</p>
+<p>Reducing through time would see aggregation of each pixel by a statistical measure, such as the mean or median.</p>
+<p>Spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximety to local pixels, or a sumary within a specified polygon.</p>
+<section id="regression" class="level5" data-number="5.1.1.2.1">
+<h5 data-number="5.1.1.2.1" class="anchored" data-anchor-id="regression"><span class="header-section-number">5.1.1.2.1</span> Regression</h5>
+<p>Regression can also function as a form of image reduction, allowing identification of change over time within a pixel.</p>
+</section>
+</section>
+</section>
+</section>
+<section id="application" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+</section>
+<section id="reflection" class="level2" data-number="5.3">
+<h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
+<p>The ability for remote sensing research to be coded in google earth engine and its API’s provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing from the analysis being performed remotley on Google’s servers) of the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).</p>
+<p>However, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
