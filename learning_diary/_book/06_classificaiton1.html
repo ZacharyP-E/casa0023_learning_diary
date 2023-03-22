@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -110,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corrections</span></a>
+  <a href="./03_Corrections.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Remote Sensing Data</span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -140,7 +159,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09_sar.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></a>
+  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -153,7 +172,15 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">6.1</span>  Summary</a></li>
+  <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">6.2</span>  Application</a></li>
+  <li><a href="#refleneural" id="toc-refleneural" class="nav-link" data-scroll-target="#refleneural"><span class="toc-section-number">6.3</span>  Refleneural</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -175,8 +202,114 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p>Week 6 focused on</p>
+<section id="summary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">6.1</span> Summary</h2>
+<p>Week 6 focused on the use of classification techniques within remotely sensed data, with some use cases looking at illegal logging identified by the Brazilian polices force to have a near real-time response to new bouts of activity.</p>
+<p>The classification techniques included involve:</p>
+<ul>
+<li><p>Linear regression</p></li>
+<li><p>Classification and regression trees (CART)</p></li>
+<li><p>With a specific look into the limitations such as overfitting involved.</p></li>
+<li><p>Random forests can be used to skirt these downfalls with multiple iterations.</p></li>
+</ul>
+<p>Another group sees unsupervised learning.</p>
+<ul>
+<li>Support Vector Machine (SVM)</li>
+</ul>
+<p>However, the use of these methods should be thought over due to the resemblance to a black box.</p>
+<p>Classification techniques are an integral stage required to efficiently process and analyse remotely sensed data, due to the sheer volume of images acquired. Pixels are grouped with their neighbours based on their spectral characteristics, allowing both spatial and temporal analysis of trends.</p>
+<p><strong>Supervised</strong> classification refers to the use of training a model on existing data, allowing the algorithm to learn the characteristics attributable to various land cover types. This can then be applied to unseen data accurately and reliably. However, this technique comes with a high initial cost for creating the training data.</p>
+<div class="callout-tip callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Support Vector Machines (SVMs)
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>SVMs are a linear binary classification technique that separates points with a boundary, called a ‘separating hyperplane’. This identifies the largest margin between the classes, allowing increased generalisation performance across the unseen data.</p>
+<div id="fig-svm" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://editor.analyticsvidhya.com/uploads/729834.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.1: Support vector machines.</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+<p><strong>Unsupervised</strong> classification, on the other hand, is an approach that can be applied when there is limited knowledge of the area of study. This is often referred to as a clustering technique, where similar spectral values are grouped. After which, are interpreted by the user. These techniques benefit from not requiring prelabeled data. However, it can often be difficult to interpret the classes, due to the black box-like nature of the model (meaning it is not clear how the classes were separated).</p>
+<p>To conclude, the efficient identification of reliable and accurate land use and cover types through time requires the use of classification techniques. Supervised and Unsupervised learning methods will be chosen based on their relative strengths and weaknesses.</p>
+</section>
+<section id="application" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="application"><span class="header-section-number">6.2</span> Application</h2>
+<p>In this section, one use of classification techniques in the real world is identified and relevant literature is reviewed.</p>
+<p>Classification techniques have a multitude of applications within remote sensing research, a key research topic being the prediction of crop yields. It provides stakeholders (farmers, academics and government officials) with an efficient and relatively accurate means to identify the yield of a field, therefore allowing informed decisions to be made. The work of both <span class="citation" data-cites="dang2021">Dang et al. (<a href="references.html#ref-dang2021" role="doc-biblioref">2021</a>)</span>, and <span class="citation" data-cites="zhu2021">Zhu, Wang, and Luo (<a href="references.html#ref-zhu2021" role="doc-biblioref">2021</a>)</span> used Support Vector Regression (SVR), Random Forest Regression (RFR) and Deep Neural Networks (DNN) to explain an average of 80% of the variation within their crop yields. This suggests that classification techniques could be of use to different scale groups:</p>
+<table class="table">
+<colgroup>
+<col style="width: 7%">
+<col style="width: 43%">
+<col style="width: 49%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Scale</th>
+<th>Small Scale</th>
+<th>Large Scale</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Group</strong></td>
+<td>Farmers</td>
+<td>Governments</td>
+</tr>
+<tr class="even">
+<td><strong>Possible uses 1</strong></td>
+<td><strong>Access to finance:</strong> Financial institutions may provide more favourable terms on their loans with evidence of expected yields.</td>
+<td><strong>Improved food security:</strong> Governments can plan for food droughts by taking appropriate measures during a year of low expected crop yields.</td>
+</tr>
+<tr class="odd">
+<td><strong>Possible uses 2</strong></td>
+<td><strong>Access to finance:</strong> Financial institutions may provide more favourable terms on their loans with evidence of expected yields.</td>
+<td><strong>Increased tax accuracy:</strong> Government GIS departments can compare reported yields from farmers to that predicted using classification techniques.</td>
+</tr>
+</tbody>
+</table>
+<p>Though there are extensive benefits to the semi-automation of crop yield prediction using remote sensing, caution should be had before adopting this methodology. <span class="citation" data-cites="khanal2020">Khanal et al. (<a href="references.html#ref-khanal2020" role="doc-biblioref">2020</a>)</span> noted several criticisms of this methodology, including:</p>
+<ul>
+<li>The limited <strong>spatial resolution</strong> could lead to missing key points of interest.</li>
+<li>Possible <strong>inaccurate sensor calibration</strong> leading to over/ underestimation of the yield</li>
+<li>Extensive <strong>data processing</strong> before insights can be extracted</li>
+</ul>
+<p><span class="citation" data-cites="rojas2007">Rojas (<a href="references.html#ref-rojas2007" role="doc-biblioref">2007</a>)</span> proposed the use of ground validation to mitigate these limitations. As this would not only allow for more accurate modelling in the future but also more confidence to be had for the existing image sets.</p>
+<p>A summary of this section can be seen in <a href="#fig-farmer-meme">Figure&nbsp;<span>6.2</span></a>.</p>
+<div id="fig-farmer-meme" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="figures/When%20you%20want%20to%20predict%20crop%20yields%20but%20you%20also%20want%20to%20save%20time%20and%20money.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;6.2: Summary meme. Image source: <a href="https://bloximages.chicago2.vip.townnews.com/sentinelsource.com/content/tncms/assets/v3/editorial/2/63/2637e3c2-81f1-11eb-a3f6-1bac6a0f2ea2/60494a2bdcd99.image.jpg?resize=400%2C267">Link</a>, meme made by author.</figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="refleneural" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="refleneural"><span class="header-section-number">6.3</span> Refleneural</h2>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-dang2021" class="csl-entry" role="doc-biblioentry">
+Dang, Chaoya, Ying Liu, Hui Yue, JiaXin Qian, and Rong Zhu. 2021. <span>“Autumn <span>Crop Yield Prediction</span> Using <span>Data-Driven Approaches</span>:- <span>Support Vector Machines</span>, <span>Random Forest</span>, and <span>Deep Neural Network Methods</span>.”</span> <em>Canadian Journal of Remote Sensing</em> 47 (2): 162–81. <a href="https://doi.org/10.1080/07038992.2020.1833186">https://doi.org/10.1080/07038992.2020.1833186</a>.
+</div>
+<div id="ref-khanal2020" class="csl-entry" role="doc-biblioentry">
+Khanal, Sami, Kushal Kc, John P. Fulton, Scott Shearer, and Erdal Ozkan. 2020. <span>“Remote <span>Sensing</span> in <span>Agriculture</span>, <span>Limitations</span>, and <span>Opportunities</span>.”</span> <em>Remote Sensing</em> 12 (22): 3783. <a href="https://doi.org/10.3390/rs12223783">https://doi.org/10.3390/rs12223783</a>.
+</div>
+<div id="ref-rojas2007" class="csl-entry" role="doc-biblioentry">
+Rojas, O. 2007. <span>“Operational Maize Yield Model Development and Validation Based on Remote Sensing and Agro-Meteorological Data in <span>Kenya</span>.”</span> <em>International Journal of Remote Sensing</em> 28 (17): 3775–93. <a href="https://doi.org/10.1080/01431160601075608">https://doi.org/10.1080/01431160601075608</a>.
+</div>
+<div id="ref-zhu2021" class="csl-entry" role="doc-biblioentry">
+Zhu, Qian, Yushi Wang, and Yulin Luo. 2021. <span>“Improvement of Multi-Layer Soil Moisture Prediction Using Support Vector Machines and Ensemble <span>Kalman</span> Filter Coupled with Remote Sensing Soil Moisture Datasets over an Agriculture Dominant Basin in <span>China</span>.”</span> <em>Hydrological Processes</em> 35 (4): e14154. <a href="https://doi.org/10.1002/hyp.14154">https://doi.org/10.1002/hyp.14154</a>.
+</div>
+</div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

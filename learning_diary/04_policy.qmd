@@ -1,4 +1,15 @@
 # Policy
 
-Week 4 focused on the applications of remote sensing to policy. 
+Week 4 focused on the applications of remote sensing to policy.
 
+## Summary
+
+Summary of the policy and city you have selected.
+
+## Application
+
+How the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge.
+
+## Reflection
+
+What you have learnt in relation to the policy, city and the application of the data.

@@ -1,3 +1,20 @@
 # Temperature
 
 Week 8 focused on ...
+
+## Summary
+
+Week 8 focused on the use of remote sensing data to advise policy related to urban temperatures.
+
+## Urban Heat Island
+
+Surface temperatures in urban areas have been found to be higher than their rural counterparts, due to the . This can be seen in @fig-uhi.
+
+![Temperature differences between urban and rural areas. ](https://ho9an2-datap1.s3.eu-west-1.amazonaws.com/wmoext/s3fs-public/inline-images/The-effect-of-Urban-Heat-Island-UHI.png?qk73B0z_CjnVhzPB0EKJrRhxAUp83pk1){#fig-uhi}
+
+Image Source: @zotero-331
+
+
+## Application
+
+## Reflection

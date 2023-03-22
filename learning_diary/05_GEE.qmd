@@ -1,3 +1,45 @@
 # Google Earth Engine
 
 Week 5 focused on ...
+
+## Summary
+
+Google earth engine is an open access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization. Allowing users to make use of Googles computing resources to process computationally expensive tasks.
+
+Users can interact with the platform in two ways:
+
+-   Google Earth Engine Website
+
+-   Python/ R API
+
+### GEE Functions
+
+#### Spatial operations
+
+-   Joins
+
+    -   Remotely sensed imagery that intersects can be joined. This can be concurrent images through time, or images adjacent in space.
+
+-   Zonal Statistics
+
+-   Filtering of images
+
+#### Image reduction
+
+Image reducing summarises imagrey either through time (reducing number of images) or through space (reducing resolotuion of imagrey). 
+
+Reducing through time would see aggregation of each pixel by a statistical measure, such as the mean or median. 
+
+Spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximety to local pixels, or a sumary within a specified polygon. 
+
+##### Regression
+
+Regression can also function as a form of image reduction, allowing identification of change over time within a pixel. 
+
+## Application
+
+
+## Reflection
+The ability for remote sensing research to be coded in google earth engine and its API's provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing from the analysis being performed remotley on Google's servers) of the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).
+
+However, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE. 
