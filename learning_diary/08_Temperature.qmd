@@ -1,6 +1,6 @@
 # Temperature
 
-Week 8 focused on ...
+Week 8 focused on the applications of remote sensing methods to research the Urban Heat Island (UHI) effect. 
 
 ## Summary
 
@@ -8,13 +8,100 @@ Week 8 focused on the use of remote sensing data to advise policy related to urb
 
 ## Urban Heat Island
 
-Surface temperatures in urban areas have been found to be higher than their rural counterparts, due to the . This can be seen in @fig-uhi.
+Surface temperatures in urban areas are higher than their rural counterparts, due to the high density of infrastructure that can absorb heat efficiently and dissipates it poorly. This can be seen in @fig-uhi.
 
 ![Temperature differences between urban and rural areas. ](https://ho9an2-datap1.s3.eu-west-1.amazonaws.com/wmoext/s3fs-public/inline-images/The-effect-of-Urban-Heat-Island-UHI.png?qk73B0z_CjnVhzPB0EKJrRhxAUp83pk1){#fig-uhi}
 
 Image Source: @zotero-331
 
+#### Importance
+
+The substantial effects that UHI's have on energy consumption, public health, biodiversity, and the economy are well documented [@guo2020]. Unfortunately, it is also known that positive feedback loops are linked with the UHI effect, as can be seen in the diagram below (authors' own).
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Urbanisation reduces vegetation cover.']
+b [label = 'More solar radiation is absorbed.']
+c [label = 'Higher urban temperatures.']
+d [label = 'Increased use of artifical cooling methods.']
+e [label = 'Increases in energy consumption.']
+
+
+
+
+a -> b -> c -> d -> e
+e -> c
+}")
+
+```
+
+This feedback loop becomes harder to exit as time goes by due to two key factors:
+
+- **Increased inertia:** To change the trajectory of the feedback loop a significant amount of energy is required.
+- **Thresholds:** Small changes over a critical threshold have been found to produce substantial increases in urban surface temperatures.
+
+
+
+The impacts of UHI's can be broken down into three subsections, present within @tbl-uhi-impacts
+
+| Factor        | Example                                                      |
+| ------------- | ------------------------------------------------------------ |
+| Social        | 1500 annual addition fatalities in the US attributed to UHI [@hsu2021]. |
+| Environmental | Increased use of fossil fuels by 550m tons each year across the US [@roxon2020]. |
+| Economic      | Melbourne estimated $282m (AUD) UHI-related health costs [@whiteoak]. |
+
+: Table of the UHI effect's possible impacts. {#tbl-uhi-impacts}
+
+
+
+#### Causes
+
+The UHI effect has a combination of factors contributing to it (also seen in @uhi-uhi-causes):
+
+- **Human Activities:** Transportation, air conditioning and construction generate high levels of pollutants and heat.
+- **Albedo:** The reflectivity of urban infrastructure is lower, meaning energy (heat) is absorbed.
+- **Reduced Vegetation Cover:** Trees and vegetation can provide shade, allowing the dissipation of heat.
+
+
+
+![Causes of the UHI effect. Image Source: [@nuruzzaman2015]](https://d3i71xaburhd42.cloudfront.net/1870564ee611fd7b9939d2b72111771a583b9822/2-Figure1-1.png){#fig-uhi-causes}
+
+
+
+#### Mitigation strategies
+
+Current policy documents addressing the UHI effect are not fit for purpose. The UN's 'beating the heat' handbook for city officials is 208 pages long and has received extensive criticism:
+
+- **Lack of focus: ** The focus was largely on developing countries, criticism suggested more help was needed for different urban contexts.
+- **Limited concrete action: **Not enough guidance was given for action (or even methods to implement them) that can be taken to mitigate UHI effects.
+
+
+
+Various cities are implementing their strategies with different rates of success, as seen in @tbl-mitigation-policy.
+
+
+
+| City      | Mitigation Policy  | Was it successful?                                           |
+| --------- | ------------------ | ------------------------------------------------------------ |
+| Barcelona | Superblocks        | Yes, but no supporting scientific literature. Fewer cars, less pollution, decreased temperatures. |
+| Medellín  | Green Corridors    | Yes, but no supporting scientific literature. Increase in green areas, increased albedo, decreased temperatures. |
+| Sydney    | Turn down the heat | Yes, but no supporting scientific literature                 |
+
+: Table of the cities' mitigation policies. {#tbl-mitigation-policy}
 
 ## Application
 
+@maclachlan2021 worked to justify the integration of modelling UHI effects in urban planning. This work could be taken further with the combination or collaboration with @richter2021. This work identified the impact tree species had on surface temperature by implementing a remote sensing workflow. The study revealed a 1◦C difference in mean land surface temperatures between the warmest and coldest tree species, reaching 4◦C in the most extreme cases. The researchers suggest that remote sensing is certainly a feasible and effective methodology for monitoring surface temperature in urban environments while providing key insights into the cooling potential of various tree species.  
+
+However, while both studies suggest that land surface temperature can be effectively and efficiently remotely sensed, there may be some limitations to their approaches. A key limitation is the limited spatial resolution of remotely sensed data, which is likely not high enough to make this scalable in a cost-effective manner. Of course, thermal imagery can be collected by UAVs providing a much higher resolution, but this will come with increased costs. 
+
+A limitation specifically to @richter2021 is the lack of addressing atmospheric conditions, which have been reported to have substantial impacts upon satellite-derived temperature data. Lastly, the focus on one study area makes the research less generalisable so may not be applicable to other regions. 
+
 ## Reflection
+
+It is evident that top-down policy suggestions, like "Beating the Heat", are largely ineffective at mitigating the effects of the UHI effect. I understand the need for a comprehensive framework on which cities can base their policy, but in this case, the document should focus on real-world applications of policy. Another factor to consider is that a policy that is effective in one city potentially won't work for another, due to variations in land use and weather patterns. Therefore, I believe that local-level governance would be more effective at implementing strategies tailored to their individual urban contexts. Though, this of course comes with limitations in terms of increased costs. 
+
+One large takeaway is the necessity that modelling is becoming to identify methods in which to reduce and monitor the state of UHI's effects on various cities. This will hopefully allow the prediction and prevention of further increases in unnecessary mortality. 

@@ -20,6 +20,25 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 
@@ -140,11 +159,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./09_sar.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Synthetic Aperture Radar</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
@@ -190,15 +204,65 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Week 5 focused on …</p>
+<p>Week 5 focused on introducing methodologies for conducting research within the Google Earth Engine (GEE) platform.</p>
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
-<p>Google earth engine is an open access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization. Allowing users to make use of Googles computing resources to process computationally expensive tasks.</p>
+<p>Google earth engine is an open-access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization, allowing users to make use of Google’s computing resources to process computationally expensive tasks.</p>
 <p>Users can interact with the platform in two ways:</p>
 <ul>
-<li><p>Google Earth Engine Website</p></li>
-<li><p>Python/ R API</p></li>
+<li>Google Earth Engine Website</li>
+<li>Python/ R API</li>
 </ul>
+<p>However, the naming conventions are not consistent across each platform. See <a href="#tbl-gee-definitions">Table&nbsp;<span>5.1</span></a> for clarification.</p>
+<div id="tbl-gee-definitions" class="anchored">
+<table class="table">
+<caption>Table&nbsp;5.1: Table of definitions.</caption>
+<thead>
+<tr class="header">
+<th>Google Earth Engine Terminology</th>
+<th>Python Terminology</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Image Collection</td>
+<td>Raster Stack</td>
+</tr>
+<tr class="even">
+<td>Image</td>
+<td>Raster Layer</td>
+</tr>
+<tr class="odd">
+<td>Feature Collection</td>
+<td>Vector DataFrame</td>
+</tr>
+<tr class="even">
+<td>Geometry</td>
+<td>Geopandas Objects</td>
+</tr>
+<tr class="odd">
+<td>ee.Array</td>
+<td>Numpy Array</td>
+</tr>
+<tr class="even">
+<td>ee.List</td>
+<td>List</td>
+</tr>
+<tr class="odd">
+<td>ee.Dictionary</td>
+<td>Dictionary</td>
+</tr>
+<tr class="even">
+<td>ee.Reducer</td>
+<td>reduce() function</td>
+</tr>
+<tr class="odd">
+<td>ee.Filter</td>
+<td>filter() function</td>
+</tr>
+</tbody>
+</table>
+</div>
 <section id="gee-functions" class="level3" data-number="5.1.1">
 <h3 data-number="5.1.1" class="anchored" data-anchor-id="gee-functions"><span class="header-section-number">5.1.1</span> GEE Functions</h3>
 <section id="spatial-operations" class="level4" data-number="5.1.1.1">
@@ -208,31 +272,48 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Remotely sensed imagery that intersects can be joined. This can be concurrent images through time, or images adjacent in space.</li>
 </ul></li>
-<li><p>Zonal Statistics</p></li>
-<li><p>Filtering of images</p></li>
+<li><p>Zonal Statistics</p>
+<ul>
+<li>Computing summaries of data within a spatial area (e.g.&nbsp;polygon)</li>
+</ul></li>
+<li><p>Filtering of images</p>
+<ul>
+<li>Applying an operation to each pixel allows the reduction of image noise or the preparation of data for further analysis.</li>
+</ul></li>
 </ul>
 </section>
 <section id="image-reduction" class="level4" data-number="5.1.1.2">
 <h4 data-number="5.1.1.2" class="anchored" data-anchor-id="image-reduction"><span class="header-section-number">5.1.1.2</span> Image reduction</h4>
-<p>Image reducing summarises imagrey either through time (reducing number of images) or through space (reducing resolotuion of imagrey).</p>
-<p>Reducing through time would see aggregation of each pixel by a statistical measure, such as the mean or median.</p>
-<p>Spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximety to local pixels, or a sumary within a specified polygon.</p>
+<p>Image reduction summarises imagery either through time (reducing the number of images) or through space (reducing the resolution of imagery).</p>
+<p>Reducing through time would see an aggregation of each pixel by a statistical measure, such as the mean or median.</p>
+<p>The spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximity to local pixels, or a summary within a specified polygon.</p>
 <section id="regression" class="level5" data-number="5.1.1.2.1">
 <h5 data-number="5.1.1.2.1" class="anchored" data-anchor-id="regression"><span class="header-section-number">5.1.1.2.1</span> Regression</h5>
-<p>Regression can also function as a form of image reduction, allowing identification of change over time within a pixel.</p>
+<p>Regression can also function as a form of image reduction, allowing the identification of change over time within a pixel.</p>
 </section>
 </section>
 </section>
 </section>
 <section id="application" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
+<p>GEE has an extensive range of applications. <span class="citation" data-cites="ghasempour2021">Ghasempour, Sekertekin, and Kutoglu (<a href="references.html#ref-ghasempour2021" role="doc-biblioref">2021</a>)</span> made use of the platform to quantify changes in atmospheric pollution experienced across Turkey during the initial COVID-19 outbreak.</p>
+<p>Sentinel-5P provided NO<sub>2</sub> and SO<sub>2</sub> products to quantify the variation occurring resultant of globally implemented lockdowns. The combination of remotely sensed data and statistical tests allowed the identification of both seasonal pollution values and a 30% average national reduction during the lockdown months.</p>
+<p>However, as was pointed out by <span class="citation" data-cites="gil-alana2020">Gil-Alana, Yaya, and Carmona-González (<a href="references.html#ref-gil-alana2020" role="doc-biblioref">2020</a>)</span>, air pollution research should be subject to criticism, if 8 seasons of data before and after the change occurred were not considered. <span class="citation" data-cites="ghasempour2021">Ghasempour, Sekertekin, and Kutoglu (<a href="references.html#ref-ghasempour2021" role="doc-biblioref">2021</a>)</span>’s conclusions should therefore be interpreted with caution as it is possible that a strong bias is present.</p>
 </section>
 <section id="reflection" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
-<p>The ability for remote sensing research to be coded in google earth engine and its API’s provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing from the analysis being performed remotley on Google’s servers) of the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).</p>
+<p>The ability for remote sensing research to be coded in the google earth engine and its APIs provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing to the analysis being performed remotely on Google’s servers), the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).</p>
 <p>However, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-ghasempour2021" class="csl-entry" role="doc-biblioentry">
+Ghasempour, Fatemeh, Aliihsan Sekertekin, and Senol Hakan Kutoglu. 2021. <span>“Google <span>Earth Engine</span> Based Spatio-Temporal Analysis of Air Pollutants Before and During the First Wave <span>COVID-19</span> Outbreak over <span>Turkey</span> via Remote Sensing.”</span> <em>Journal of Cleaner Production</em> 319 (October): 128599. <a href="https://doi.org/10.1016/j.jclepro.2021.128599">https://doi.org/10.1016/j.jclepro.2021.128599</a>.
+</div>
+<div id="ref-gil-alana2020" class="csl-entry" role="doc-biblioentry">
+Gil-Alana, Luis A., OlaOluwa S. Yaya, and Nieves Carmona-González. 2020. <span>“Air Quality in <span>London</span>: Evidence of Persistence, Seasonality and Trends.”</span> <em>Theoretical and Applied Climatology</em> 142 (1): 103–15. <a href="https://doi.org/10.1007/s00704-020-03305-1">https://doi.org/10.1007/s00704-020-03305-1</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

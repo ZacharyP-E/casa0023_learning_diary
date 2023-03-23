@@ -1,16 +1,33 @@
 # Google Earth Engine
 
-Week 5 focused on ...
+Week 5 focused on introducing methodologies for conducting research within the Google Earth Engine (GEE) platform. 
 
 ## Summary
 
-Google earth engine is an open access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization. Allowing users to make use of Googles computing resources to process computationally expensive tasks.
+Google earth engine is an open-access platform for remote sensing and earth observation data, providing an extensive bank of satellite imagery for analysis and visualization, allowing users to make use of Google's computing resources to process computationally expensive tasks.
 
 Users can interact with the platform in two ways:
 
 -   Google Earth Engine Website
-
 -   Python/ R API
+
+However, the naming conventions are not consistent across each platform. See @tbl-gee-definitions for clarification.
+
+
+
+| Google Earth Engine Terminology | Python Terminology |
+| ------------------------------ | -------------------- |
+| Image Collection               | Raster Stack   |
+| Image                          | Raster Layer         |
+| Feature Collection             | Vector DataFrame |
+| Geometry                       | Geopandas Objects |
+| ee.Array                       | Numpy Array        |
+| ee.List                        | List                |
+| ee.Dictionary                  | Dictionary          |
+| ee.Reducer                     | reduce() function    |
+| ee.Filter                      | filter() function    |
+
+: Table of definitions. {#tbl-gee-definitions}
 
 ### GEE Functions
 
@@ -21,25 +38,39 @@ Users can interact with the platform in two ways:
     -   Remotely sensed imagery that intersects can be joined. This can be concurrent images through time, or images adjacent in space.
 
 -   Zonal Statistics
+    -   Computing summaries of data within a spatial area (e.g. polygon)
 
 -   Filtering of images
+    -   Applying an operation to each pixel allows the reduction of image noise or the preparation of data for further analysis. 
+
 
 #### Image reduction
 
-Image reducing summarises imagrey either through time (reducing number of images) or through space (reducing resolotuion of imagrey). 
+Image reduction summarises imagery either through time (reducing the number of images) or through space (reducing the resolution of imagery). 
 
-Reducing through time would see aggregation of each pixel by a statistical measure, such as the mean or median. 
+Reducing through time would see an aggregation of each pixel by a statistical measure, such as the mean or median. 
 
-Spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximety to local pixels, or a sumary within a specified polygon. 
+The spatial reduction would see aggregation by region or neighbourhood, with the mean or median values being measured. This can be done either by proximity to local pixels, or a summary within a specified polygon. 
 
 ##### Regression
 
-Regression can also function as a form of image reduction, allowing identification of change over time within a pixel. 
+Regression can also function as a form of image reduction, allowing the identification of change over time within a pixel. 
 
 ## Application
 
+GEE has an extensive range of applications. @ghasempour2021 made use of the platform to quantify changes in atmospheric pollution experienced across Turkey during the initial COVID-19 outbreak. 
+
+Sentinel-5P provided NO~2~ and SO~2~ products to quantify the variation occurring resultant of globally implemented lockdowns. The combination of remotely sensed data and statistical tests allowed the identification of both seasonal pollution values and a 30% average national reduction during the lockdown months. 
+
+However, as was pointed out by @gil-alana2020, air pollution research should be subject to criticism, if 8 seasons of data before and after the change occurred were not considered. @ghasempour2021's conclusions should therefore be interpreted with caution as a strong bias may be present. 
+
+
+
 
 ## Reflection
-The ability for remote sensing research to be coded in google earth engine and its API's provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing from the analysis being performed remotley on Google's servers) of the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).
+The ability for remote sensing research to be coded in the google earth engine and its APIs provides a key opportunity for heightened reproducibility within earth observational research, as has become popular in current literature. In addition to the swiftness (owing to the analysis being performed remotely on Google's servers), the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI) such as SNAP or QGIS.
 
-However, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE. 
+However, more advanced processing tools that are customised for each project (such as interferometry) are currently only present in SNAP and cannot be found within the GEE environment. Furthermore, the javascript used for GEE has its limitations:
+
+- Not being able to run portions of the script, only having the option to run the entire script (Inefficient when developing code).
+- Some functions in GEE are much longer than their counterparts in Python/ R.
