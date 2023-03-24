@@ -1,0 +1,53 @@
+project:
+  type: book
+  output-dir: docs
+
+
+book:
+  title: "CASA0023 Remotely Sensing Cities and Environments"
+  author: Zachary Pescod-Everiss
+  date: r Sys.Date()
+  navbar:
+    logo: images/casa_logo.jpg
+    collapse: true
+    collapse-below: lg
+    background: light
+    search: true
+    right:
+      - icon: github
+  sidebar:
+    title: "CASA0023"
+    style: floating
+    reader-mode: true
+  repo-url: https://github.com/ZacharyP-E/casa0023_learning_diary
+  repo-actions: [edit, issue]
+  chapters:
+    - index.qmd
+    - 01_Intro.qmd
+    - 02_Presentation.qmd
+    - 03_Corrections.qmd
+    - 04_policy.qmd
+    - 05_GEE.qmd
+    - 06_classificaiton1.qmd
+    - 07_classification2.qmd
+    - 08_Temperature.qmd
+    - references.qmd
+  #favicon: "assets/favicon.ico"	
+  reader-mode: true
+
+
+bibliography: references.bib
+
+
+format:
+  html:
+    theme:
+        light: [cosmo, flatly]
+        dark: [cosmo, darkly]
+    code-link: true
+
+
+  pdf:
+    documentclass: scrbook
+#editor: visual
+
