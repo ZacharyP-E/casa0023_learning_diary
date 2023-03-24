@@ -149,17 +149,12 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></a>
+  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./08_Temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -298,12 +293,16 @@ div.csl-indent {
 <h2 data-number="5.2" class="anchored" data-anchor-id="application"><span class="header-section-number">5.2</span> Application</h2>
 <p>GEE has an extensive range of applications. <span class="citation" data-cites="ghasempour2021">Ghasempour, Sekertekin, and Kutoglu (<a href="references.html#ref-ghasempour2021" role="doc-biblioref">2021</a>)</span> made use of the platform to quantify changes in atmospheric pollution experienced across Turkey during the initial COVID-19 outbreak.</p>
 <p>Sentinel-5P provided NO<sub>2</sub> and SO<sub>2</sub> products to quantify the variation occurring resultant of globally implemented lockdowns. The combination of remotely sensed data and statistical tests allowed the identification of both seasonal pollution values and a 30% average national reduction during the lockdown months.</p>
-<p>However, as was pointed out by <span class="citation" data-cites="gil-alana2020">Gil-Alana, Yaya, and Carmona-González (<a href="references.html#ref-gil-alana2020" role="doc-biblioref">2020</a>)</span>, air pollution research should be subject to criticism, if 8 seasons of data before and after the change occurred were not considered. <span class="citation" data-cites="ghasempour2021">Ghasempour, Sekertekin, and Kutoglu (<a href="references.html#ref-ghasempour2021" role="doc-biblioref">2021</a>)</span>’s conclusions should therefore be interpreted with caution as it is possible that a strong bias is present.</p>
+<p>However, as was pointed out by <span class="citation" data-cites="gil-alana2020">Gil-Alana, Yaya, and Carmona-González (<a href="references.html#ref-gil-alana2020" role="doc-biblioref">2020</a>)</span>, air pollution research should be subject to criticism, if 8 seasons of data before and after the change occurred were not considered. <span class="citation" data-cites="ghasempour2021">Ghasempour, Sekertekin, and Kutoglu (<a href="references.html#ref-ghasempour2021" role="doc-biblioref">2021</a>)</span>’s conclusions should therefore be interpreted with caution as a strong bias may be present.</p>
 </section>
 <section id="reflection" class="level2" data-number="5.3">
 <h2 data-number="5.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">5.3</span> Reflection</h2>
-<p>The ability for remote sensing research to be coded in the google earth engine and its APIs provides a key opportunity for heightened reproducibility within earth observational research. In addition to the swiftness (owing to the analysis being performed remotely on Google’s servers), the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI).</p>
-<p>However, more advanced processing tools that are customised for each project (such as interferometry) are present in SNAP that cannot be found in GEE.</p>
+<p>The ability for remote sensing research to be coded in the google earth engine and its APIs provides a key opportunity for heightened reproducibility within earth observational research, as has become popular in current literature. In addition to the swiftness (owing to the analysis being performed remotely on Google’s servers), the platform appears far superior to manually downloading and then analysing remotely sensed imagery within a graphical user interface (GUI) such as SNAP or QGIS.</p>
+<p>However, more advanced processing tools that are customised for each project (such as interferometry) are currently only present in SNAP and cannot be found within the GEE environment. Furthermore, the javascript used for GEE has its limitations:</p>
+<ul>
+<li>Not being able to run portions of the script, only having the option to run the entire script (Inefficient when developing code).</li>
+<li>Some functions in GEE are much longer than their counterparts in Python/ R.</li>
+</ul>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">

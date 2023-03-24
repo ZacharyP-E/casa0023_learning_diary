@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>casa0023_learning_diary - 7&nbsp; Classificaiton II</title>
+<title>casa0023_learning_diary - 7&nbsp; Classification II</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,25 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
 }
 </style>
 
@@ -70,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></h1>
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -130,17 +149,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></a>
+  <a href="./07_classification2.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./08_Temperature.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Temperature</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./glossary.html" class="sidebar-item-text sidebar-link">Glossary</a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -157,7 +171,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">7.1</span>  Summary</a></li>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="toc-section-number">7.1</span>  Summary</a>
+  <ul class="collapse">
+  <li><a href="#accuracy-assessment" id="toc-accuracy-assessment" class="nav-link" data-scroll-target="#accuracy-assessment"><span class="toc-section-number">7.1.1</span>  Accuracy Assessment</a></li>
+  <li><a href="#receiver-operating-characteristic-roc-curve" id="toc-receiver-operating-characteristic-roc-curve" class="nav-link" data-scroll-target="#receiver-operating-characteristic-roc-curve"><span class="toc-section-number">7.1.2</span>  Receiver Operating Characteristic (ROC) Curve</a></li>
+  <li><a href="#spatial-cross-validaiton" id="toc-spatial-cross-validaiton" class="nav-link" data-scroll-target="#spatial-cross-validaiton"><span class="toc-section-number">7.1.3</span>  Spatial Cross Validaiton</a></li>
+  </ul></li>
   <li><a href="#application" id="toc-application" class="nav-link" data-scroll-target="#application"><span class="toc-section-number">7.2</span>  Application</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="toc-section-number">7.3</span>  Reflection</a></li>
   </ul>
@@ -168,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classificaiton II</span></h1>
+<h1 class="title d-none d-lg-block"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification II</span></h1>
 </div>
 
 
@@ -182,17 +201,94 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Week 7 focused on …</p>
+<p>Week 7 was a continuation of classification techniques taught in week 6, applicable to remote sensing and beyond.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://i.ibb.co/QQXPXZp/To-remote-sensing-and-beyond.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Image Source: <a href="https://www.independent.co.uk/arts-entertainment/films/news/best-film-quotes-of-alltime-toy-story-s-buzz-lightyear-tops-radio-times-poll-9836754.html">Link</a>, caption added by author.</figcaption><p></p>
+</figure>
+</div>
 <section id="summary" class="level2" data-number="7.1">
 <h2 data-number="7.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">7.1</span> Summary</h2>
+<section id="accuracy-assessment" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="accuracy-assessment"><span class="header-section-number">7.1.1</span> Accuracy Assessment</h3>
+<p>The performance of classification techniques can be identified using accuracy assessment techniques. The resultant accuracy measure is dependent on several factors, including:</p>
+<ul>
+<li>Choice of classification technique.</li>
+<li>Quality of input data</li>
+<li>Accuracy of real data (ground truth)</li>
+</ul>
+<p>The results of the classification (predicted) values are compared against the real-world (ground truth) data in an error matrix. This compares the quantity of correct and incorrect (misclassification) classifications. An example of which can be seen in <a href="#fig-error-matrix">Figure&nbsp;<span>7.1</span></a>.</p>
+<div id="fig-error-matrix" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://github.com/andrewmaclachlan/CASA0023-lecture-7/blob/main/img/matrix.PNG?raw=true" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.1: Classification Error Matrix. Image Source: <span class="citation" data-cites="barsi2018">Barsi et al. (<a href="references.html#ref-barsi2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+<p>Accuracy can then be broken down into:</p>
+<ul>
+<li><strong>Producer’s Accuracy:</strong> The percentage of correctly defined samples within a classification compared to the ground truth.</li>
+<li><strong>User’s Accuracy: </strong> The percentage of correctly defined samples compared to other classifications.</li>
+<li><strong>Overall Accuracy: </strong>The percentage of all correctly defined samples.</li>
+</ul>
+<p>Accuracy is required to ensure the usefulness of classification results in remote sensing applications, as inaccurate models may make decision-makers uninformed. It is important to identify a suitable balance between the accuracy measures, as focusing on one may lead to placing too much importance on identifying unusual classes at the cost of overall accuracy.</p>
+<p>This is related to a phenomenon known as <strong>overfitting</strong> (demonstrated in <a href="#fig-overfitting">Figure&nbsp;<span>7.2</span></a>). This leads to high performance in training datasets, but otherwise, it performs poorly. This means that the model has learned the noise of the dataset, rather than the general trends occurring.</p>
+<div id="fig-overfitting" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190523171258/overfitting_2.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.2: Identifying a balance between accuracy measures ensures an appropriate level of the fitting. Image Source: <span class="citation" data-cites="geeksforgeeks2017">GeeksForGeeks (<a href="references.html#ref-geeksforgeeks2017" role="doc-biblioref">2017</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="receiver-operating-characteristic-roc-curve" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="receiver-operating-characteristic-roc-curve"><span class="header-section-number">7.1.2</span> Receiver Operating Characteristic (ROC) Curve</h3>
+<p>This is a graphical representation of classification model performance showing the relationship between True and False positive rates (TPR &amp; FPR). The ROC curve maps a perfect classifier against the TPR and FPR values to allow simultaneous evaluation of multiple classification models, as can be seen in <a href="#fig-roc">Figure&nbsp;<span>7.3</span></a>.</p>
+<div id="fig-roc" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Roc_curve.svg/220px-Roc_curve.svg.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.3: ROC curve. Image source: <span class="citation" data-cites="martinthoma2018">MartinThoma (<a href="references.html#ref-martinthoma2018" role="doc-biblioref">2018</a>)</span></figcaption><p></p>
+</figure>
+</div>
+</section>
+<section id="spatial-cross-validaiton" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="spatial-cross-validaiton"><span class="header-section-number">7.1.3</span> Spatial Cross Validaiton</h3>
+<p>Spatial cross-validation is a technique used to account for Tobler’s first law of geography (spatial autocorrelation) and ensure assumptions of validation techniques are maintained, particularly referencing the independence of data.</p>
+<p>The method can be seen in <a href="#fig-scv">Figure&nbsp;<span>7.4</span></a>. Nearby pixels are not considered due to their increased likelihood to be similar (possibly biasing the model). The data is iteratively partitioned into training sets allowing validation data to be spatially independent, which is crucial for assessing the model’s accuracy.</p>
+<div id="fig-scv" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://miro.medium.com/v2/resize:fit:1400/0*ALoitT61zdnlyrGN.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;7.4: Identifying spatial cross validaiton. Image Source: <span class="citation" data-cites="lovelace2019">Lovelace, Nowosad, and Muenchow (<a href="references.html#ref-lovelace2019" role="doc-biblioref">2019</a>)</span>.</figcaption><p></p>
+</figure>
+</div>
+</section>
 </section>
 <section id="application" class="level2" data-number="7.2">
 <h2 data-number="7.2" class="anchored" data-anchor-id="application"><span class="header-section-number">7.2</span> Application</h2>
+<p>Another (in addition to week 6) application of classification is using remote sensing data to map fire severity in south-eastern Australia. <span class="citation" data-cites="gibson2020">Gibson et al. (<a href="references.html#ref-gibson2020" role="doc-biblioref">2020</a>)</span> used a random forest approach with Sentinel 2 imagery to compare reflectance and fractional cover candidate severity indices. Cross-validation was undertaken to evaluate the mapping accuracy across the study area, revealing &gt;95% accuracy for unburnt and extreme severity classes, with a drop off to 70% for moderate classes. The authors suggest that further study is required to improve the classification accuracy of low and moderate-severity classes and apply the RF algorithm to hazard-reduction fires.</p>
+<p>However, again the study lacks a comparison to existing fire severity mapping methods in addition to only features only sources of satellite imagery. To mitigate these research credibility risks the author should consider comparing with other data sources to evaluate the relative benefits and weaknesses of the current model, and where possible even integrate further data sources such as thermal imagery.</p>
 </section>
 <section id="reflection" class="level2" data-number="7.3">
 <h2 data-number="7.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">7.3</span> Reflection</h2>
+<p>This week’s content presented a comprehensive set of techniques for assessing the accuracy, and mitigating for conditions of those tests to be met (data independence). It was interesting to learn just how powerful classification techniques can be when paired with remote-sensing data, with the valuable information to be had regarding patterns and characteristics of planetary surfaces. However, to produce reliable and accurate classifications it is important not to blindly apply them to data. To do this one must understand both the strengths and weaknesses of each technique and choose accordingly based on the specific application. This can then be reaffirmed when validation of accuracy is produced. This process allows for continuous thought and reflection on the meaning results may have, and what the researcher is expecting as an output.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-barsi2018" class="csl-entry" role="doc-biblioentry">
+Barsi, Á., Zs Kugler, I. László, Gy Szabó, and H. M. Abdulmutalib. 2018. <span>“<span>ACCURACY DIMENSIONS IN REMOTE SENSING</span>.”</span> <em>The International Archives of the Photogrammetry, Remote Sensing and Spatial Information Sciences</em> XLII-3 (April): 61–67. <a href="https://doi.org/10.5194/isprs-archives-XLII-3-61-2018">https://doi.org/10.5194/isprs-archives-XLII-3-61-2018</a>.
+</div>
+<div id="ref-geeksforgeeks2017" class="csl-entry" role="doc-biblioentry">
+GeeksForGeeks. 2017. <span>“<span>ML</span> | <span>Underfitting</span> and <span>Overfitting</span>.”</span> <em>GeeksforGeeks</em>.
+</div>
+<div id="ref-gibson2020" class="csl-entry" role="doc-biblioentry">
+Gibson, Rebecca, Tim Danaher, Warwick Hehir, and Luke Collins. 2020. <span>“A Remote Sensing Approach to Mapping Fire Severity in South-Eastern <span>Australia</span> Using Sentinel 2 and Random Forest.”</span> <em>Remote Sensing of Environment</em> 240 (April): 111702. <a href="https://doi.org/10.1016/j.rse.2020.111702">https://doi.org/10.1016/j.rse.2020.111702</a>.
+</div>
+<div id="ref-lovelace2019" class="csl-entry" role="doc-biblioentry">
+Lovelace, Robin, Jakub Nowosad, and Jannes Muenchow. 2019. <em>Chapter 12 <span>Statistical</span> Learning | <span>Geocomputation</span> with <span>R</span></em>.
+</div>
+<div id="ref-martinthoma2018" class="csl-entry" role="doc-biblioentry">
+MartinThoma. 2018. <span>“Deutsch: <span>ROC-Kurve</span> - Die <span>Abszisse</span> Ist Die <span>Falsch-Positiv-Rate</span> Und Die <span>Ordinate</span> Die <span>Richtig-</span>.”</span>
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

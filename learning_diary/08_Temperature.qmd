@@ -59,7 +59,7 @@ The impacts of UHI's can be broken down into three subsections, present within @
 
 #### Causes
 
-The UHI effect has a combination of factors contributing to it (also seen in @uhi-uhi-causes):
+The UHI effect has a combination of factors contributing to it (also seen in @fig-uhi-causes):
 
 - **Human Activities:** Transportation, air conditioning and construction generate high levels of pollutants and heat.
 - **Albedo:** The reflectivity of urban infrastructure is lower, meaning energy (heat) is absorbed.
