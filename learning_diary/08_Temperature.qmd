@@ -29,13 +29,9 @@ c [label = 'Higher urban temperatures.']
 d [label = 'Increased use of artifical cooling methods.']
 e [label = 'Increases in energy consumption.']
 
-
-
-
 a -> b -> c -> d -> e
 e -> c
 }")
-
 ```
 
 This feedback loop becomes harder to exit as time goes by due to two key factors:
@@ -105,3 +101,79 @@ A limitation specifically to @richter2021 is the lack of addressing atmospheric 
 It is evident that top-down policy suggestions, like "Beating the Heat", are largely ineffective at mitigating the effects of the UHI effect. I understand the need for a comprehensive framework on which cities can base their policy, but in this case, the document should focus on real-world applications of policy. Another factor to consider is that a policy that is effective in one city potentially won't work for another, due to variations in land use and weather patterns. Therefore, I believe that local-level governance would be more effective at implementing strategies tailored to their individual urban contexts. Though, this of course comes with limitations in terms of increased costs. 
 
 One large takeaway is the necessity that modelling is becoming to identify methods in which to reduce and monitor the state of UHI's effects on various cities. This will hopefully allow the prediction and prevention of further increases in unnecessary mortality. 
+
+Positive feedback loops are of great interest to me. The idea that a system can iteratively and semi-permenantly spiral out of control, unless difinitve action is taken is pretty daunting. 
+
+  
+
+### Deforestation and Climate Change
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Deforestation release carbon.']
+b [label = 'Climate change increases temperature.']
+c [label = 'Changes in temperature infulence forest health.']
+d [label = 'Increased change of wildfires.']
+
+a -> b -> c -> d 
+d -> a
+}")
+```
+
+### Agriculture and Water Resources
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Agriculture requires large amounts of water.']
+b [label = 'Irrigation depletes water reosurce.']
+c [label = 'Less water leads to reduced yield of crops and soil degradation.']
+d [label = 'Soil degradation leads to reduce water infiltration.']
+
+a -> b -> c -> d 
+d -> a
+}")
+```
+
+### Coastal Erosion and Habitat Loss
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Coastal erosion leads to loss of habitat.']
+b [label = 'Change in species distribution and reduced biodiversity.']
+c [label = 'Change in ecosystem functioning.']
+d [label = 'Exacerbation of coastal erosion.']
+
+a -> b -> c -> d 
+d -> a
+}")
+```
+
+### Glacal Retreat and Sea Level Rise
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TB]
+
+a [label = 'Glacial retreat leads to melting ice.']
+b [label = 'Increase in water in ocean.']
+c [label = 'Sea level rise. ']
+d [label = 'Flooding and coastal erosion.']
+e [label = 'Further glacial retreat.']
+
+a -> b -> c -> d -> e
+e -> a
+}")
+```
+
+
+

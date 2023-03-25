@@ -64,7 +64,7 @@ Combining several bands of remote-sensing imagery allow for enhancements such as
 
 ## Applications
 
-@ilori2019's research worked investigated how four atmospheric correction algorithms performed when being applied to Landsat 8 imagery of coastal waters. The four atmospheric correction models were:
+@ilori2019's research worked to investigate how four atmospheric correction algorithms performed when being applied to Landsat 8 imagery of coastal waters. The four atmospheric correction models were:
 
 -   Atmospheric and Radiometric Correction of Satellite Imagery (ARCSI).
 -   Atmospheric Correction for OLI lite (ACOLITE).
@@ -80,6 +80,12 @@ It was found that generic methods of atmospheric correction, such as LaSRC, perf
 
 : Table of key errors identified in @ilori2019's research, and their reasoning. {#tbl-sea-errors}
 
+As these methods are used to plot bathymetric maps, it is essential to address and correct the inherent errors in the imagery. If not, it could lead to ships and other vessels becoming grounded.
+
+Although @ilori2019's work made use of 14 validation sites, they were solely located within the 'global North', as can be seen in @fig-validation-sites. This becomes problematic when additional factors may be present in the 'global South' that should be considered. For example, @okafor-yarwood2020 identified that while developed nations tend to dispose of their waste through landfill, less developed countries can sometimes resort to dumping their waste into their oceans. This is likely to have a large impact on the remote sensing capabilities specifically when trying to map bathymetry.
+
+![Mapped location of validation sites for @ilori2019's research.](https://pub.mdpi-res.com/remotesensing/remotesensing-11-00469/article_deploy/html/images/remotesensing-11-00469-g001.png?1571142378){#fig-validation-sites}
+
 ## Reflection
 
-Correcting remotely sensed data is essential because of the various sources of noise and error that are introduced impacting on the quality of the images. As these atmospheric conditions and geometric distortions (causing the error) are not consistent temporally or spatially they must be accurate and reliably corrected to allow for incorrect interpretations and decisions to be avoided.
+Correcting remotely sensed data is essential because of the various sources of noise and error that are introduced impacting the quality of the images. As these atmospheric conditions and geometric distortions (causing the error) are not consistent temporally or spatially they must be accurate and reliably corrected to allow for incorrect interpretations and decisions to be avoided.

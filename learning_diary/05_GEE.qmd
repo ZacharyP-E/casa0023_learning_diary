@@ -60,9 +60,13 @@ Regression can also function as a form of image reduction, allowing the identifi
 
 GEE has an extensive range of applications. @ghasempour2021 made use of the platform to quantify changes in atmospheric pollution experienced across Turkey during the initial COVID-19 outbreak. 
 
-Sentinel-5P provided NO~2~ and SO~2~ products to quantify the variation occurring resultant of globally implemented lockdowns. The combination of remotely sensed data and statistical tests allowed the identification of both seasonal pollution values and a 30% average national reduction during the lockdown months. 
+Sentinel-5P provided NO~2~ and SO~2~ products to quantify the variation occurring resultant of globally implemented lockdowns. The combination of remotely sensed data and statistical tests allowed the identification of both seasonal pollution values and a 30% average national reduction during the lockdown months, as can be seen in @fig-barplot.
 
-However, as was pointed out by @gil-alana2020, air pollution research should be subject to criticism, if 8 seasons of data before and after the change occurred were not considered. @ghasempour2021's conclusions should therefore be interpreted with caution as a strong bias may be present. 
+
+
+![Barplot identifying derived NO~2~ across the study area. Source: @ghasempour2021](https://ars.els-cdn.com/content/image/1-s2.0-S0959652621028043-gr4.jpg){#fig-barplot}
+
+However, as was pointed out by @gil-alana2020, air pollution research should be subject to criticism if 8 seasons of data before and after the change occurred are not considered. @ghasempour2021's conclusions should therefore be interpreted with caution as a strong bias may be present. If the author could provide further background into past seasonal trends of Turkey's air quality then the conclusions would be further reinforced. 
 
 
 

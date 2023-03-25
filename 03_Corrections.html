@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CASA0023 Remotely Sensing Cities and Environments - 3&nbsp; Remote Sensing Data</title>
+<title>CASA0023 Learning Diary - 3&nbsp; Remote Sensing Data</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -51,6 +51,7 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <link href="./04_policy.html" rel="next">
 <link href="./02_Presentation.html" rel="prev">
+<link href="./images/casa_logo.jpg" rel="icon" type="image/jpeg">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -96,7 +97,7 @@ div.csl-indent {
     <img src="./images/casa_logo.jpg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">CASA0023 Remotely Sensing Cities and Environments</span>
+    <span class="navbar-title">CASA0023 Learning Diary</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -363,7 +364,7 @@ div.csl-indent {
 </section>
 <section id="applications" class="level2" data-number="3.2">
 <h2 data-number="3.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">3.2</span> Applications</h2>
-<p><span class="citation" data-cites="ilori2019">Ilori, Pahlevan, and Knudby (<a href="references.html#ref-ilori2019" role="doc-biblioref">2019</a>)</span>’s research worked investigated how four atmospheric correction algorithms performed when being applied to Landsat 8 imagery of coastal waters. The four atmospheric correction models were:</p>
+<p><span class="citation" data-cites="ilori2019">Ilori, Pahlevan, and Knudby (<a href="references.html#ref-ilori2019" role="doc-biblioref">2019</a>)</span>’s research worked to investigate how four atmospheric correction algorithms performed when being applied to Landsat 8 imagery of coastal waters. The four atmospheric correction models were:</p>
 <ul>
 <li>Atmospheric and Radiometric Correction of Satellite Imagery (ARCSI).</li>
 <li>Atmospheric Correction for OLI lite (ACOLITE).</li>
@@ -396,15 +397,26 @@ div.csl-indent {
 </tbody>
 </table>
 </div>
+<p>As these methods are used to plot bathymetric maps, it is essential to address and correct the inherent errors in the imagery. If not, it could lead to ships and other vessels becoming grounded.</p>
+<p>Although <span class="citation" data-cites="ilori2019">Ilori, Pahlevan, and Knudby (<a href="references.html#ref-ilori2019" role="doc-biblioref">2019</a>)</span>‘s work made use of 14 validation sites, they were solely located within the ’global North’, as can be seen in <a href="#fig-validation-sites">Figure&nbsp;<span>3.1</span></a>. This becomes problematic when additional factors may be present in the ‘global South’ that should be considered. For example, <span class="citation" data-cites="okafor-yarwood2020">Okafor-Yarwood and Adewumi (<a href="references.html#ref-okafor-yarwood2020" role="doc-biblioref">2020</a>)</span> identified that while developed nations tend to dispose of their waste through landfill, less developed countries can sometimes resort to dumping their waste into their oceans. This is likely to have a large impact on the remote sensing capabilities specifically when trying to map bathymetry.</p>
+<div id="fig-validation-sites" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="https://pub.mdpi-res.com/remotesensing/remotesensing-11-00469/article_deploy/html/images/remotesensing-11-00469-g001.png?1571142378" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Figure&nbsp;3.1: Mapped location of validation sites for <span class="citation" data-cites="ilori2019">Ilori, Pahlevan, and Knudby (<a href="references.html#ref-ilori2019" role="doc-biblioref">2019</a>)</span>’s research.</figcaption><p></p>
+</figure>
+</div>
 </section>
 <section id="reflection" class="level2" data-number="3.3">
 <h2 data-number="3.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">3.3</span> Reflection</h2>
-<p>Correcting remotely sensed data is essential because of the various sources of noise and error that are introduced impacting on the quality of the images. As these atmospheric conditions and geometric distortions (causing the error) are not consistent temporally or spatially they must be accurate and reliably corrected to allow for incorrect interpretations and decisions to be avoided.</p>
+<p>Correcting remotely sensed data is essential because of the various sources of noise and error that are introduced impacting the quality of the images. As these atmospheric conditions and geometric distortions (causing the error) are not consistent temporally or spatially they must be accurate and reliably corrected to allow for incorrect interpretations and decisions to be avoided.</p>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
 <div id="ref-ilori2019" class="csl-entry" role="doc-biblioentry">
 Ilori, Christopher O., Nima Pahlevan, and Anders Knudby. 2019. <span>“Analyzing <span>Performances</span> of <span>Different Atmospheric Correction Techniques</span> for <span>Landsat</span> 8: <span>Application</span> for <span>Coastal Remote Sensing</span>.”</span> <em>Remote Sensing</em> 11 (4): 469. <a href="https://doi.org/10.3390/rs11040469">https://doi.org/10.3390/rs11040469</a>.
+</div>
+<div id="ref-okafor-yarwood2020" class="csl-entry" role="doc-biblioentry">
+Okafor-Yarwood, Ifesinachi, and Ibukun Jacob Adewumi. 2020. <span>“Toxic Waste Dumping in the <span>Global South</span> as a Form of Environmental Racism: <span>Evidence</span> from the <span>Gulf</span> of <span>Guinea</span>.”</span> <em>African Studies</em> 79 (3): 285–304. <a href="https://doi.org/10.1080/00020184.2020.1827947">https://doi.org/10.1080/00020184.2020.1827947</a>.
 </div>
 <div id="ref-shippert" class="csl-entry" role="doc-biblioentry">
 Shippert, Peg. n.d. <span>“Push <span>Broom</span> and <span>Whisk Broom Sensors</span>.”</span> <em>L3Harris Geospatial</em>. https://www.l3harrisgeospatial.com/Support/Self-Help-Tools/Help-Articles/Help-Articles-Detail/ArtMID/10220/ArticleID/16262/Push-Broom-and-Whisk-Broom-Sensors. Accessed February 10, 2023.

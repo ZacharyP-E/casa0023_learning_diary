@@ -1,4 +1,4 @@
 
 # Welcome {.unnumbered}
 
-A learning diary for the module CASA0025 - Remote Sensing for Earth Observation, featured in the CASA, UCL MSc programe.
+A learning diary for the module CASA0023 - Remote Sensing for Earth Observation, featured in the CASA, UCL MSc program.

@@ -4,7 +4,7 @@ project:
 
 
 book:
-  title: "CASA0023 Remotely Sensing Cities and Environments"
+  title: "CASA0023 Learning Diary"
   author: Zachary Pescod-Everiss
   date: r Sys.Date()
   navbar:
@@ -32,7 +32,7 @@ book:
     - 07_classification2.qmd
     - 08_Temperature.qmd
     - references.qmd
-  #favicon: "assets/favicon.ico"	
+  favicon: "images/casa_logo.jpg"	
   reader-mode: true
 
 
