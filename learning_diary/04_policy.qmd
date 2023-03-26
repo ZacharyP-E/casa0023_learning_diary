@@ -4,12 +4,158 @@ Week 4 focused on the applications of remote sensing to policy.
 
 ## Summary
 
-Summary of the policy and city you have selected.
+*This section gives a summary of the partnership between Nairobi's county government and the International Center for Tropical Agriculture (CIAT) and their work to promote urban agriculture for increased food security.*
+
+### City Summary
+
+Kenya is home to one of Africa's fastest-growing cities, Nairobi (as can be seen in @fig-nairobi-pop). Due to this unprecedented growth, the 4 million residents have faced increasing concern about food insecurity which has become a significant challenge for their local government [@termeer2022].
+
+
+
+![Population growth in Keynas capital city, Nairobi. Source: @barakamwau2020](https://www.researchgate.net/publication/342479696/figure/fig3/AS:906728484904960@1593192325403/Nairobis-population-growth.png){#fig-nairobi-pop}
+
+The location of Nairobi can be seen in @fig-nairobi-location
+
+![The locaiton of Nairobi. Source: [Link](http://news.bbc.co.uk/1/hi/world/africa/6305727.stm)](http://newsimg.bbc.co.uk/media/images/42503000/gif/_42503301_kenya_nairobi_mom_map203.gif){#fig-nairobi-location}
+
+### Policy Summary
+
+#### Global Policy Overview: Sustainable Development Goals (SDGs) {.unnumbered}
+
+The second SDG aims to end hunger, achieve food security, improve nutrition, and promote sustainable agricultural practices around the world. It forms one of the 17 global goals set by the UN as part of the 2030 Agenda for Sustainable Development. 
+
+The specific targets of SDG 2 include:
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = LR, overlap = true, fontsize = 25]
+
+a [label = 'SDG 2 \nGoals']
+b [label = 'Ending hunger and malnutrition.']
+c [label = 'Increasing agricultural productivity and sustainability.']
+d [label = 'Ensuring equitable access to land,\n technology, and markets.']
+e [label = 'Enhancing resilience to climate and economic shocks.']
+
+f [label = 'Ensuring access to safe, nutritious, and sufficient \nfood all year round for everyone, especially vulnerable populations.']
+g [label = ' Supporting small-scale farmers and improving \nagricultural practices to increase food production while \nminimizing environmental impacts.']
+h [label = 'Supporting inclusive and sustainable economic growth \nand development by ensuring that all people, \nparticularly women and marginalized groups, \nhave equal access to land, technology, and markets.']
+i [label = 'Supporting policies and programs that increase \nthe resilience of agriculture and food systems \nto climate change and economic shocks, \nsuch as droughts or food price spikes.']
+
+a -> {b c d e}
+b -> f
+c -> g
+d -> h
+e -> i
+}")
+```
+
+Overall, SDG 2 recognizes the critical role of sustainable agriculture and food security in achieving a more just and sustainable world. The goal aims to address the complex challenges of hunger and malnutrition by promoting sustainable agricultural practices, improving access to nutritious food, and supporting inclusive and resilient food systems.
+
+
+
+#### Local Policy {.unnumbered}
+
+The partnership between the Nairobi County Government and the International Center for Tropical Agriculture (CIAT) uses remote sensing data to work towards SDG 2 by promoting urban agriculture. This is done by mapping existing agricultural areas and using this information to support policy and planning change to allow for improved food production in the area to support local markets. 
+
+Residents and policymakers can then be informed about what factors contribute to creating successful urban agriculture within Nairobi, and where best to develop further agricultural land. This is in addition to community-led programmes being rolled out to engage the youth and women in urban agriculture. Allowing the development of understanding regarding the benefits and limitations of Nairobi's urban agriculture plans. 
+
+Overall, this policy is working to promote the use of sustainable agricultural practices to improve food security for the residents of Nairobi, a concern that has been growing in recent years. 
 
 ## Application
 
-How the remotely sensed data you sourced could be used to assist with contributing to the policy goal. How could the data be applied to solve the policy challenge.
+*This section will identify how the remotely sensed data that was sourced could be used to contribute to the policy goal, answering the question: 'How could the data be applied to solve the policy challenge?'*
+
+Nairobi and their partner do not specify the methodology used in their urban agricultural mapping project, but here is some general information on the uses of remote sensing data sources and techniques they may call upon for their analysis.
+
+#### Data Sources {.unnumbered}
+
+It is most likely that **satellite imagery** is employed to help Nairobi in its battle against food insecurity, due to its relatively inexpensive nature. Satellite sensors such as Landsat, and Sentinel provide global monitoring of high-resolution multispectral imagery that can be used to identify vegetation and land cover. 
+
+Though still possible, it is less likely that **Unmanned Aerial Vehicles** (UAVs) are used, due to their more expensive nature. However, their even higher-resolution cameras would allow for an in-depth analysis providing detailed vegetation cover and crop health statistics.
+
+#### Techniques {.unnumbered}
+
+**Crop Monitoring**
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TR]
+
+a [label = 'Acquire remote sensing imagrey.']
+b [label = 'Correct imagrey for atmospheric effects.']
+c [label = 'Use a vegetation index (NDVI) to monitor crop abundance and health.']
+d [label = 'Predict crop production.']
+e [label = 'Identify areas where crop failure is likely.']
+f [label = 'Implement mitigtation strategies.']
+
+a -> b -> c -> d -> e -> f
+}")
+```
+
+**Land Use Mapping**
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TR]
+
+a [label = 'Acquire remote sensing imagrey.']
+b [label = 'Correct imagrey for atmospheric effects.']
+c [label = 'Classify land use patterns.']
+d [label = 'Identify areas suitable for agriculture.']
+e [label = 'Develop land use plans for sustainable agricultural practises.']
+
+a -> b -> c -> d -> e
+}")
+```
+
+**Early Warning Systems**
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TR]
+
+a [label = 'Acquire remote sensing imagrey.']
+b [label = 'Detect weather events in imagrey.']
+c [label = 'Use analysis to devolop early warning systems']
+d [label = 'Prepare response plans.']
+e [label = 'Take early intervention response to prevent further food insecuirty.']
+
+a -> b -> c -> d -> e
+}")
+```
+
+**Food Security Assessment**
+
+```{r echo=FALSE}
+DiagrammeR::grViz("digraph {
+  
+graph[layout = dot, rankdir = TR]
+
+a [label = 'Acquire remote sensing imagrey.']
+b [label = 'Correct imagrey for atmospheric effects.']
+c [label = 'Use imagrey and a combination of \nexternal data sources to assess food secuity.']
+d [label = 'Identify areas at risk for malnutrition.']
+e [label = 'Target relief aid to areas with greatest risk.']
+
+a -> b -> c -> d -> e
+}")
+```
 
 ## Reflection
 
-What you have learnt in relation to the policy, city and the application of the data.
+*This section works to answer the question 'What you have learnt about the policy, city and the application of the data?'*
+
+Nairobi has used remote sensing imagery to help identify existing and potential urban agricultural areas to ensure food security is maintained or improved for its residents. Though the city (or its partner) has not specified their methodology, it is likely they are making use of crop monitoring, lane use mapping, early warning systems, and food security assessments to support the development of future policy in this area. This has allowed for data-informed decisions to be made, and early interventions to be taken prior to extreme weather conditions that would have plunged Nairobi's residents into food insecurity. Nairobi's issue with food security is not an uncommon one. The use of remote sensing techniques to advise policy related to SDG 2 could be of benefit across the world, specifically in arid regions (identified in @fig-arid-regions).
+
+![World map of arid regions. Source: [Link](https://www.researchgate.net/publication/257840303_Modeling_the_Soiling_of_Glazing_Materials_in_Arid_Regions_with_Geographic_Information_Systems_GIS/figures?lo=1&utm_source=google&utm_medium=organic)](https://www.researchgate.net/publication/257840303/figure/fig1/AS:614133875621900@1523432334632/Arid-and-semi-arid-regions-according-to-the-Koeppen-Geiger-climate-classification-The-red.png){#fig-arid-regions}
+
+
+
+An output of the policy can be seen in @fig-urban-agri, which appears to be a neatly arranged urban agricultural area featuring thriving crops.
+
+![An urban agricultural area in Nairobi, Kenya. Source: [Link](https://aphrc.org/blogarticle/daring-to-dream-of-a-food-secure-future-for-nairobi-residents/)](https://aphrc.org/wp-content/uploads/2020/07/Urban-farming-1200x900.jpg){#fig-urban-agri}
+
