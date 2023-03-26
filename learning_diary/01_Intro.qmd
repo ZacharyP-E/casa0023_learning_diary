@@ -6,6 +6,8 @@ Welcome
 
 Remote sensing refers to techniques used to gather data for an object or area of interest without directly measuring it. This often makes use of sensors aboard satellites or aircraft [@li2020; @watts2012], but can also employ handheld measurements such as LIDAR [@dong2017].
 
+![Remote Sensing Meme. Source: [Link](https://media.makeameme.org/created/remote-sensing-obtaining.jpg)](https://media.makeameme.org/created/remote-sensing-obtaining.jpg){#fig-rs-meme}
+
 This has become an important tool for environmental research due to the large amounts of data becoming available, with relatively high temporal resolution.
 
 ### How do they work?
@@ -34,31 +36,27 @@ a -> b -> c
 
 Sensors can be broken down into two broad classes, being passive and active.
 
-![Figure 1: Broad classifications of remote sensors.](https://www.researchgate.net/publication/339726853/figure/fig1/AS:865831357521920@1583441690681/Differences-between-passive-and-active-sensors.png)
+![Broad classifications of remote sensors.](https://www.researchgate.net/publication/339726853/figure/fig1/AS:865831357521920@1583441690681/Differences-between-passive-and-active-sensors.png){#fig-sensing_passive_active}
 
 Image Source: @lopezornelas2016
 
-+-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-|                   | Active                                                                     | Passive                                                                           |
-+===================+============================================================================+===================================================================================+
-| **Energy Source** | Emits electromagnetic waves from sensor.                                   | Uses reflected energy from the sun                                                |
-+-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-| **Benefit**       | -   Can penetrate through clouds, and vegetation.                          | -   Cheaper and requiring less specialised hardware compared to Active sensors.   |
-|                   |                                                                            |                                                                                   |
-|                   | -   Control of sensor leads to highly accurate data.                       | -   Wider range of wavelengths providing a more comprehensive view.               |
-+-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
-| **Limitation**    | -   More expensive than passive sensors due to the required energy source. | -   Less effective during poor weather conditions.                                |
-|                   |                                                                            |                                                                                   |
-|                   | -   The emitted radiation can impact upon wildlife.                        | -   Suffers from shadow effects from vegetation (E.g. trees), soil and buildings. |
-+-------------------+----------------------------------------------------------------------------+-----------------------------------------------------------------------------------+
++---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| =================== **Energy Source** | Active \| Passive \| ============================================================================+===================================================================================+ Emits electromagnetic waves from the sensor. \| Uses reflected energy from the sun |
++---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Benefit**                           | -   Can penetrate through clouds and vegetation. \| - Cheaper and requires less specialised hardware compared to Active sensors. \| \| \|                                                                                                                                 |
+|                                       | -   Control of the sensor leads to highly accurate data. \| - A wider range of wavelengths provides a more comprehensive view. \|                                                                                                                                         |
++---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| **Limitation**                        | -   More expensive than passive sensors due to the required energy source. \| - Less effective during poor weather conditions. \| \| \|                                                                                                                                   |
+|                                       | -   The emitted radiation can impact wildlife. \| - Suffers from shadow effects from vegetation (E.g. trees), soil and buildings. \|                                                                                                                                      |
++---------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ### Electromagnetic (EM) waves
 
-The EM energy measured by the sensor is not equal to that which is emitted by the source. This is due interferences such as energy absorption on a surface, or scattering from particles within the atmosphere.
+The EM energy measured by the sensor is not equal to that which is emitted by the source. This is due to interferences such as energy absorption on a surface, or scattering from particles within the atmosphere.
 
-The different wavelength of the EM radiation interacts with surfaces in different ways, making some ideal for remotely sensing planetary surfaces (not limited to Earth observation).
+The different wavelength of EM radiation interacts with surfaces in different ways, making some ideal for remotely sensing planetary surfaces (not limited to Earth observation).
 
-![Figure 2: Strength of reflection from surfaces](https://www.researchgate.net/publication/318175303/figure/fig1/AS:513582069751808@1499458915697/Strength-of-reflection-and-radiation-of-electromagnetic-waves-from-plants-earth-and.png)
+![Strength of reflection from surfaces](https://www.researchgate.net/publication/318175303/figure/fig1/AS:513582069751808@1499458915697/Strength-of-reflection-and-radiation-of-electromagnetic-waves-from-plants-earth-and.png){#fig-em_spectrum}
 
 Image Source: @young2017
 
@@ -66,11 +64,11 @@ Image Source: @young2017
 
 The level of detail is referred to as resolution. Remotely sensed data features four forms of resolution (similar to the resolution of a camera).
 
-|             | Spatial                                     | Temporal                                                  | Spectral                                                          | Radiometric                                             |
-|-------------|---------------------------------------------|-----------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------|
-| Description | The unit area that a single pixel spans.    | The time between usable successive images (revisit time). | The number of electromagnetic wave bands in an image.             | The number of bits representing the digitised waves. \| |
-| Importance  | Providing more detailed data on study area. | Ability to identify change through time.                  | Allows more detailed information on properties of the study area. | Identifying finer variations in reflected energy.       |
-| Units       | Feet or meters squared.                     | Days                                                      | Wavelength or band                                                | Bits                                                    |
+|             | Spatial                                         | Temporal                                                  | Spectral                                                              | Radiometric                                             |
+|-------------|-------------------------------------------------|-----------------------------------------------------------|-----------------------------------------------------------------------|---------------------------------------------------------|
+| Description | The unit area that a single pixel spans.        | The time between usable successive images (revisit time). | The number of electromagnetic wave bands in an image.                 | The number of bits representing the digitised waves. \| |
+| Importance  | Providing more detailed data on the study area. | Ability to identify change through time.                  | Allows more detailed information on the properties of the study area. | Identifying finer variations in reflected energy.       |
+| Units       | Feet or meters squared.                         | Days                                                      | Wavelength or band                                                    | Bits                                                    |
 
 ## Applications
 
@@ -103,22 +101,22 @@ Many academic studies use remotely sensed data to quantify changes temporally.
 
 SAR data can be used to identify water surface anomalies, allowing the identification of flooding or drought over large spatial extents. @lopez2020 used data to calculate the surface water areal fraction (SWAF) of the Amazon river basin to quantify changes in water content after the drought in 2010.
 
-![Figure 3: Changes in SWAF in the Amazon basin during a drought event in 2010.](https://i.ibb.co/8b2WJx3/10712-2020-9618-Fig7-HTML-png.webp)
+![Changes in SWAF in the Amazon basin during a drought event in 2010.](https://i.ibb.co/8b2WJx3/10712-2020-9618-Fig7-HTML-png.webp){#fig-water-surface}
 
 CASA's own Ollie Ballinger is at the forefront of remote sensing application innovation. Specifically within the intelligence gathering stream.
 
 2.  Radar Interference Tracker [@ballinger2022]
 
-Accidentally maximizing (instead of minimising) the background noise of the Sentinel-1 SAR (Synthetic Aperture Radar) imagery revealed interference caused by active missile defense systems spread across the middle east. Allowing those with the technical skills to manipulate remotely sensed data to identify locations of the armed forces activity. This phenomena has been found to occur due to the overlap of wavelength frequencies between military radar systems and that used by SAR satellites.
+Accidentally maximizing (instead of minimising) the background noise of the Sentinel-1 SAR (Synthetic Aperture Radar) imagery revealed interference caused by active missile defence systems spread across the middle east. Allowing those with the technical skills to manipulate remotely sensed data to identify locations of the armed forces activity. This phenomenon has been found to occur due to the overlap of wavelength frequencies between military radar systems and those used by SAR satellites.
 
-![Figure 4: Converging lines of interference over an Airbase in Bahrain.](https://miro.medium.com/v2/resize:fit:720/format:webp/1*8jVUwoNCHqB_Z1m5FT7RhA.png)
+![Converging lines of interference over an Airbase in Bahrain.](https://miro.medium.com/v2/resize:fit:720/format:webp/1*8jVUwoNCHqB_Z1m5FT7RhA.png){#fig-radar-interference}
 
 Image Source: @dan2020
 
 3.  Open Source Damage Detection in Ukraine
 
-Topography data (likely from SAR satellite sensor) was used by Ollie to identify variation before and after an event, allowing the quantification of building height change. This can be overlaid with OSM (Open Street Map) data to allow the prediction of quantity of residents displaced by the distraction during conflict, in addition to starting to identify where resources should be allocated best to rebuild Ukraine's infrastructure.
+Topography data (likely from the SAR satellite sensor) was used by Ollie to identify variation before and after an event, allowing the quantification of building height change. This can be overlaid with OSM (Open Street Map) data to allow the prediction of the number of residents displaced by the distraction during the conflict, in addition to starting to identify where resources should be allocated best to rebuild Ukraine's infrastructure.
 
 ## Reflection
 
-The use of passive remotely sensed data appears to have significant flaw of being obstructed by poor weather conditions with cloud cover, in addition to the limited spatial resolution. Both of these factors would mean that the analysis of small scale temporal and spatial change could prove inaccurate or unfeasible. However, if the limitations are considered before conducting scientific research the methodology can provde valuable insights for academics, policy makers and the wider group of stakeholders.
+The use of passive remotely sensed data appears to have the significant flaw of being obstructed by poor weather conditions with cloud cover, in addition to the limited spatial resolution. Both of these factors would mean that the analysis of small-scale temporal and spatial change could prove inaccurate or unfeasible. However, if the limitations are considered before conducting scientific research the methodology can provide valuable insights for academics, policymakers and the wider group of stakeholders.

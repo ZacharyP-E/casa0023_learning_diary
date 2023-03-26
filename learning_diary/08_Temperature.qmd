@@ -6,6 +6,10 @@ Week 8 focused on the applications of remote sensing methods to research the Urb
 
 Week 8 focused on the use of remote sensing data to advise policy related to urban temperatures.
 
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/811550841?h=947210717f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+
+
+
 ## Urban Heat Island
 
 Surface temperatures in urban areas are higher than their rural counterparts, due to the high density of infrastructure that can absorb heat efficiently and dissipates it poorly. This can be seen in @fig-uhi.

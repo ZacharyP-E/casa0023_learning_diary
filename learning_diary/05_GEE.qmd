@@ -78,3 +78,9 @@ However, more advanced processing tools that are customised for each project (su
 
 - Not being able to run portions of the script, only having the option to run the entire script (Inefficient when developing code).
 - Some functions in GEE are much longer than their counterparts in Python/ R.
+
+Furthermore, as JavaScript is a new language to me, I have found myself relating to @fig-computing-meme frequently. 
+
+
+
+![The struggles of learning a new coding language. Source: [Link](https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.facebook.com%2Fgisrshub%2Fphotos%2Fa.790779361105848%2F1819979251519182%2F&psig=AOvVaw3ZBM8DxGxH9eDQKNh4RlFg&ust=1679831842055000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCLiezbOD9_0CFQAAAAAdAAAAABBY)](https://i.ibb.co/NNmphmN/Unknown.jpg){#fig-computing-meme}

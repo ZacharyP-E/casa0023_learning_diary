@@ -37,6 +37,10 @@ This is used to address the distortions introduced from the satellite viewing an
 
 Removing the effects of atmospheric interference on imagery, to improve quality. Interference comes from the scattering of incoming light, and the absorption of that being reflected. Both of which can result in a poor representation of the study area.
 
+See @fig-atmosphere as a graphical description.
+
+![The need for atmospheric corrections. Source: [Link](http://mdl4eo.irstea.fr/wp-content/uploads/2022/04/meme_decloud.jpg)](http://mdl4eo.irstea.fr/wp-content/uploads/2022/04/meme_decloud.jpg){#fig-atmosphere}
+
 #### Empirical Line Correction
 
 Comparing the reflectance values of a known target, also known as ground truth measurements. Linear regression can be applied to allow the identification of variation between real-world values and those that are remotely monitored.
@@ -61,6 +65,10 @@ Combining several bands of remote-sensing imagery allow for enhancements such as
 | Normalized Difference Moisture Index   | NDMI         | The abundance of moisture in remote sensing imagery.     | (NIR - MIR) / (NIR + MIR)         |
 
 : Table of interesting remote sensing enhancements. {#tbl-enhancments}
+
+See @fig-ndvi-meme for a brief summary of NDVI.
+
+![NDVI Meme. Source: [Link](https://i.redd.it/ggd7oxp59qb31.jpg)](https://i.redd.it/ggd7oxp59qb31.jpg){#fig-ndvi-meme}
 
 ## Applications
 
