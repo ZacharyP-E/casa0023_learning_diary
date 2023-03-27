@@ -6,7 +6,7 @@ project:
 book:
   title: "CASA0023 Learning Diary"
   author: Zachary Pescod-Everiss
-  date: r Sys.Date()
+  date: "03/27/2023"
   navbar:
     logo: images/casa_logo.jpg
     collapse: true
