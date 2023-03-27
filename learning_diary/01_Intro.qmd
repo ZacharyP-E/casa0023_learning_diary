@@ -1,6 +1,6 @@
 # An Introduction to Remote Sensing
 
-Welcome
+Week 1 focused on introducing remote sensing as a technique for research.
 
 ## Summary
 
