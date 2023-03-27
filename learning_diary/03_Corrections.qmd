@@ -66,7 +66,7 @@ Combining several bands of remote-sensing imagery allow for enhancements such as
 
 : Table of interesting remote sensing enhancements. {#tbl-enhancments}
 
-See @fig-ndvi-meme for a brief summary of NDVI.
+See @fig-ndvi-meme for a summary of NDVI.
 
 ![NDVI Meme. Source: [Link](https://i.redd.it/ggd7oxp59qb31.jpg)](https://i.redd.it/ggd7oxp59qb31.jpg){#fig-ndvi-meme}
 
@@ -97,3 +97,5 @@ Although @ilori2019's work made use of 14 validation sites, they were solely loc
 ## Reflection
 
 Correcting remotely sensed data is essential because of the various sources of noise and error that are introduced impacting the quality of the images. As these atmospheric conditions and geometric distortions (causing the error) are not consistent temporally or spatially they must be accurate and reliably corrected to allow for incorrect interpretations and decisions to be avoided.
+
+**Wider Applications:** In past research, I have had to account for climatological factors when analysing urban air quality, as changes in humidity and wind speed have been found to likely cause changes in airborne pollution concentration. I imagine this will still be the case for remotely sensed data and would provide another step in the methodological process before a final output can be produced. I wonder if any existing libraries can implement remotely sensed pollution data with remotely sensed weather data to provide a standardised and reproducible unit of airborne pollutants. This would be of great benefit to academics and policy advisors when examining urban air pollution mitigation strategies.
